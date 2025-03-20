@@ -1,0 +1,3 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 G:\DA1
+warning: default on the choice symbol MHZ14A_PWM (defined at G:/DA1/Component/MH_Z14A/Kconfig.projbuild:27) will have no effect, as defaults do not affect choice symbols
+warning: default on the choice symbol MHZ14A_UART (defined at G:/DA1/Component/MH_Z14A/Kconfig.projbuild:30) will have no effect, as defaults do not affect choice symbols
