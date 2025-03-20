@@ -2,9 +2,9 @@
 #include "esp_log.h"
 #include "mhz14a.h" 
 
-#define MHZ14A_UART_PORT UART_NUM_2
-#define MHZ14A_TX_PIN    4  // Chọn GPIO 4 làm TX
-#define MHZ14A_RX_PIN    5  // Chọn GPIO 5 làm RX
+#define MHZ14A_UART_PORT UART_NUM_1
+#define MHZ14A_TX_PIN    32  // Chọn GPIO 4 làm TX
+#define MHZ14A_RX_PIN    33  // Chọn GPIO 5 làm RX
 
 void init_mhz14a_sensor(void) {
 
@@ -29,7 +29,7 @@ void init_mhz14a_sensor(void) {
 }
 
 void read_mhz14a_data(void) {
-    uint32_t co2_ppm;
+    uint8_t co2_ppm;
 
     while (1) {
         if (mhz14a_getDataFromSensorViaUART(&co2_ppm) == ESP_OK) {
