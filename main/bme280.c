@@ -50,7 +50,7 @@ esp_err_t bme280_check_connection(void) {
 }
 
 //Đọc dữ liệu nhiệt độ và độ ẩm từ BME280
-void read_and_save_bme280_data(void) {
+void read_bme280_data(void) {
     bme280 bme280_device;
     float temperature, pressure, humidity;
 
