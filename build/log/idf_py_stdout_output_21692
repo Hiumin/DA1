@@ -1,0 +1,252 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:)I (49) boot: Partition Table:
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data     �ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 30 2025 03:46:58[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e674h ( 58996) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001e69c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e6c0 vaddr=3ffb0000 size=01958h (  6488) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=25b94h (154516) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=00045bbc vaddr=3ffb1958 size=00c98h (  3224) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=0004685c vaddr=40080000 size=0eda0h ( 60832) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (218) cpu_start: Multicore app[0m
+[0;32mI (226) cpu_start: Pro cpu start user code[0m
+[0;32mI (226) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (226) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     test[0m
+[0;32mI (230) app_init: App version:      7c80c03-dirty[0m
+[0;32mI (235) app_init: Compile time:     Mar 30 2025 00:46:42[0m
+[0;32mI (240) app_init: ELF file SHA256:  d53344084...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (250) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (254) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (258) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB3018 len 0002CFE8 (179 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 4008EDA0 len 00011260 (68 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) main_task: Started on CPU0[0m
+[0;32mI (324) main_task: Calling app_main()[0m
+[0;32mI (324) SDcard: Starting SD card initialization...[0m
+[0;32mI (324) sdcard_initialize: Initializing SD card[0m
+[0;32mI (324) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (324) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (334) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (544) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[1;31mE (544) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (544) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (544) sdcard_initialize: Failed to initialize the card (ESP_ERR_INVALID_RESPONSE). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (564) SDcard: Failed to initialize SD card.[0m
+[0;32mI (564) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 30 2025 03:46:58[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e674h ( 58996) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001e69c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e6c0 vaddr=3ffb0000 size=01958h (  6488) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=25b94h (154516) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=00045bbc vaddr=3ffb1958 size=00c98h (  3224) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=0004685c vaddr=40080000 size=0eda0h ( 60832) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (218) cpu_start: Multicore app[0m
+[0;32mI (226) cpu_start: Pro cpu start user code[0m
+[0;32mI (226) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (226) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     test[0m
+[0;32mI (230) app_init: App version:      7c80c03-dirty[0m
+[0;32mI (235) app_init: Compile time:     Mar 30 2025 00:46:42[0m
+[0;32mI (240) app_init: ELF file SHA256:  d53344084...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (250) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (254) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (258) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB3018 len 0002CFE8 (179 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 4008EDA0 len 00011260 (68 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) main_task: Started on CPU0[0m
+[0;32mI (324) main_task: Calling app_main()[0m
+[0;32mI (324) SDcard: Starting SD card initialization...[0m
+[0;32mI (324) sdcard_initialize: Initializing SD card[0m
+[0;32mI (324) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (324) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (334) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (464) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[1;31mE (3464) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (3464) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;32mI (3464) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (3464) sdcard_initialize: Failed to initialize the card (ESP_ERR_TIMEOUT). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (3484) SDcard: Failed to initialize SD card.[0m
+[0;32mI (3484) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 30 2025 03:46:58[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e674h ( 58996) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001e69c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e6c0 vaddr=3ffb0000 size=01958h (  6488) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=25b94h (154516) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=00045bbc vaddr=3ffb1958 size=00c98h (  3224) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=0004685c vaddr=40080000 size=0eda0h ( 60832) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (218) cpu_start: Multicore app[0m
+[0;32mI (226) cpu_start: Pro cpu start user code[0m
+[0;32mI (226) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (226) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     test[0m
+[0;32mI (230) app_init: App version:      7c80c03-dirty[0m
+[0;32mI (235) app_init: Compile time:     Mar 30 2025 00:46:42[0m
+[0;32mI (240) app_init: ELF file SHA256:  d53344084...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (250) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (254) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (258) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB3018 len 0002CFE8 (179 KiB): DRAM[0m
+[0;32mI (278) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (289) heap_init: At 4008EDA0 len 00011260 (68 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (298) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (314) main_task: Started on CPU0[0m
+[0;32mI (324) main_task: Calling app_main()[0m
+[0;32mI (324) SDcard: Starting SD card initialization...[0m
+[0;32mI (324) sdcard_initialize: Initializing SD card[0m
+[0;32mI (324) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (324) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (334) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (384) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (424) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[1;31mE (3424) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (3424) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;32mI (3424) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (3424) sdcard_initialize: Failed to initialize the card (ESP_ERR_TIMEOUT). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (3444) SDcard: Failed to initialize SD card.[0m
+[0;32mI (3444) main_task: Returned from app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 30 2025 03:46:58[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0e674h ( 58996) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001e69c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e6c0 vaddr=3ffb0000 size=01958h (  6488) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=25b94h (154516) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=00045bbc vaddr=3ffb1958 size=00c98h (  3224) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=0004685c vaddr=40080000 size=0eda0h ( 60832) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (218) cpu_start: Multicore app[0m
+[0;32mI (226) cpu_start: Pro cpu start user code[0m
+[0;32mI (226) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (226) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     test[0m
+[0;32mI (230) app_init: App version:      7c80c03-dirty[0m
+[0;32mI (235) app_init: Compile time:     Mar 30 2025 00:46:42[0m
+[0;32mI (240) app_init: ELF file SHA256:  d53344084...[0m
+[0;32mI (244) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (250) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (254) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (258) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (262) heap_
