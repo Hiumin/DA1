@@ -1961,7 +1961,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_DataManager_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = G:\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SG:\DA1 -BG:\DA1\build
+  command = G:\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SG:\Da1_2024.2 -BG:\Da1_2024.2\build
   description = Re-running CMake...
   generator = 1
 

@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-G:/DA1/build/CMakeFiles/bootloader
-G:/DA1/build/CMakeFiles/bootloader.rule
-G:/DA1/build/CMakeFiles/bootloader-complete.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-G:/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+G:/Da1_2024.2/build/CMakeFiles/bootloader
+G:/Da1_2024.2/build/CMakeFiles/bootloader.rule
+G:/Da1_2024.2/build/CMakeFiles/bootloader-complete.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

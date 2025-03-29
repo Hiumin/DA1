@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/Component/i2cdev
+# Install script for directory: G:/Da1_2024.2/Component/i2cdev
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

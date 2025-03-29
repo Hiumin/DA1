@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/Component/esp_idf_lib_helpers
+# Install script for directory: G:/Da1_2024.2/Component/esp_idf_lib_helpers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

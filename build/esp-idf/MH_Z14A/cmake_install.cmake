@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/Component/MH_Z14A
+# Install script for directory: G:/Da1_2024.2/Component/MH_Z14A
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

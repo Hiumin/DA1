@@ -29,7 +29,7 @@ void init_mhz14a_sensor(void) {
 }
 
 void read_mhz14a_data(void) {
-    uint8_t co2_ppm;
+    uint32_t co2_ppm;
 
     while (1) {
         if (mhz14a_getDataFromSensorViaUART(&co2_ppm) == ESP_OK) {

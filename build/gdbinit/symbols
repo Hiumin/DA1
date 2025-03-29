@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file G:/DA1/build/bootloader/bootloader.elf
+    add-symbol-file G:/Da1_2024.2/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file G:/DA1/build/test.elf
+file G:/Da1_2024.2/build/test.elf

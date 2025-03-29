@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/Component/FileManager
+# Install script for directory: G:/Da1_2024.2/Component/FileManager
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

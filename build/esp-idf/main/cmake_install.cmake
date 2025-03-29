@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/main
+# Install script for directory: G:/Da1_2024.2/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

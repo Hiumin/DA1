@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/Component/PMS7003
+# Install script for directory: G:/Da1_2024.2/Component/PMS7003
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: G:/DA1/Component/BMP280
+# Install script for directory: G:/Da1_2024.2/Component/BMP280
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
