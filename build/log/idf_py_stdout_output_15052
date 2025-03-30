@@ -1,0 +1,76 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D G:\Da1_2024.2\build\bootloader\esp-idf\esptool_py && G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-master/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 G:/Da1_2024.2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6600 bytes. 0xa00 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from G:/Da1_2024.2/Component/MH_Z14A/mhz14a.h:22,
+                 from G:/Da1_2024.2/main/main.c:7:
+C:/Espressif/frameworks/esp-idf-master/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+G:/Da1_2024.2/Component/MH_Z14A/mhz14a.h:105:42: warning: 'mhz14a_on_off_functionSelfCalibration' declared 'static' but never defined [-Wunused-function]
+  105 | __attribute__((unused)) static esp_err_t mhz14a_on_off_functionSelfCalibration(bool statusFunction);
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+G:/Da1_2024.2/Component/MH_Z14A/mhz14a.h:42:22: warning: 'mhz14a_captureQueue' defined but not used [-Wunused-variable]
+   42 | static QueueHandle_t mhz14a_captureQueue = NULL;
+      |                      ^~~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+warning: default on the choice symbol MHZ14A_PWM (defined at G:/Da1_2024.2/Component/MH_Z14A/Kconfig.projbuild:27) will have no effect, as defaults do not affect choice symbols
+warning: default on the choice symbol MHZ14A_UART (defined at G:/Da1_2024.2/Component/MH_Z14A/Kconfig.projbuild:30) will have no effect, as defaults do not affect choice symbols
+[7/10] Linking CXX executable test.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated G:/Da1_2024.2/build/test.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D G:\Da1_2024.2\build\esp-idf\esptool_py && G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-master/components/partition_table/check_sizes.py --offset 0x8000 partition --type app G:/Da1_2024.2/build/partition_table/partition-table.bin G:/Da1_2024.2/build/test.bin"
+test.bin binary size 0x49f20 bytes. Smallest app partition is 0x100000 bytes. 0xb60e0 bytes (71%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-master\components\esptool_py && G:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-master -D SERIAL_TOOL=G:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-master/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=G:/Da1_2024.2/build -P C:/Espressif/frameworks/esp-idf-master/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev5
+Serial port COM8
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 88:13:bf:71:9c:f4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00059fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26112 bytes to 16477...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000757d... (100 %)
+Wrote 26112 bytes (16477 compressed) at 0x00001000 in 0.8 seconds (effective 269.3 kbit/s)...
+Hash of data verified.
+Compressed 302880 bytes to 167340...
+Writing at 0x00010000... (9 %)
+Writing at 0x0001c389... (18 %)
+Writing at 0x00023ef7... (27 %)
+Writing at 0x00029b90... (36 %)
+Writing at 0x0002f80a... (45 %)
+Writing at 0x000352e6... (54 %)
+Writing at 0x0003bef1... (63 %)
+Writing at 0x00044c62... (72 %)
+Writing at 0x0004c6cb... (81 %)
+Writing at 0x000522cd... (90 %)
+Writing at 0x00058739... (100 %)
+Wrote 302880 bytes (167340 compressed) at 0x00010000 in 4.3 seconds (effective 567.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 225.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

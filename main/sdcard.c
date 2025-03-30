@@ -32,14 +32,10 @@ sdmmc_card_t sdcard;
 
 void init_sdcard(void)
 {
-    ESP_LOGI("SDcard", "Starting SD card initialization...");
-
-    // Cấu hình bắt buộc
     slot_config.gpio_cs = PIN_NUM_CS;
     slot_config.host_id = host.slot;
-    host.max_freq_khz = 400; // khởi tạo an toàn
+    host.max_freq_khz = 400; // Tốc độ tối đa của thẻ SD (400kHz)
 
-    // Gọi hàm từ component sdcard
     esp_err_t ret = sdcard_initialize(&mount_config, &sdcard, &host, &spi_bus_cfg, &slot_config);
     if (ret == ESP_OK)
     {
@@ -51,3 +47,61 @@ void init_sdcard(void)
     }
 }
 
+void write_file(const char *nameFile)
+{
+    // Ghi dữ liệu vào file test.txt
+    esp_err_t ret = sdcard_writeDataToFile(nameFile, "ESP32");
+    if (ret == ESP_OK)
+    {
+        ESP_LOGI("SDcard", "File written successfully.");
+    }
+    else
+    {
+        ESP_LOGE("SDcard", "Failed to write file.");
+    }
+}
+
+void read_file(const char *nameFile)
+{
+    char data[128];
+    esp_err_t ret = sdcard_readDataFromFile(nameFile, "%s", data);
+    if (ret == ESP_OK)
+    {
+        ESP_LOGI("SDcard", "File content: %s", data);
+    }
+    else if (ret == ESP_ERR_NOT_FOUND)
+    {
+        ESP_LOGE("SDcard", "File not found.");
+    }
+    else
+    {
+        ESP_LOGE("SDcard", "Failed to read file.");
+    }
+}
+
+void delete_file(const char *nameFile)
+{
+    esp_err_t ret = sdcard_removeFile(nameFile);
+    if (ret == ESP_OK)
+    {
+        ESP_LOGI("SDcard", "File deleted successfully.");
+    }
+    else
+    {
+        ESP_LOGE("SDcard", "Failed to delete file.");
+    }
+}
+
+void rename_file(const char *oldNameFile, char *newNameFile)
+{
+    esp_err_t ret = sdcard_renameFile(oldNameFile, newNameFile);
+    
+    if (ret == ESP_OK)
+    {
+        ESP_LOGI("SDcard", "File renamed successfully.");
+    }
+    else
+    {
+        ESP_LOGE("SDcard", "Failed to rename file.");
+    }
+}

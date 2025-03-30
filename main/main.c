@@ -11,6 +11,11 @@
 
 //SDCARD
 extern void init_sdcard(void);
+extern void write_file(const char *nameFile);
+extern void read_file(const char *nameFile);
+extern void delete_file(const char *nameFile);
+extern void rename_file(const char *oldNameFile, char *newNameFile);
+
 //PM7003
 extern void pms7003_task(void *pvParameters);
 
@@ -26,6 +31,10 @@ void app_main(void)
 {
     //SDCARD
     init_sdcard();
+    write_file("test");
+    read_file("test");
+    rename_file("test","test1");
+    delete_file("test1");
     // //PMS7003
     // xTaskCreate(pms7003_task, "pms7003_task", 4096, NULL, 5, NULL);
     
