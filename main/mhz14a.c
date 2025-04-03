@@ -33,7 +33,7 @@ void read_mhz14a_data(void) {
 
     while (1) {
         if (mhz14a_getDataFromSensorViaUART(&co2_ppm) == ESP_OK) {
-            ESP_LOGI("MH_Z14A", "Nong do CO2: %d ppm", co2_ppm);
+            ESP_LOGI("MH_Z14A", "Nong do CO2: %lu ppm", co2_ppm);
         } else {
             ESP_LOGE("MH_Z14A", "Khong the doc du lieu tu MH-Z14A");
         }
