@@ -8,6 +8,7 @@
 #include "pms7003.h"
 #include "esp_mac.h"
 #include "sdcard.h"
+#include "ds3231.h"
 
 //SDCARD
 extern void init_sdcard(void);
@@ -15,6 +16,7 @@ extern void write_file(const char *nameFile);
 extern void read_file(const char *nameFile);
 extern void delete_file(const char *nameFile);
 extern void rename_file(const char *oldNameFile, char *newNameFile);
+extern void ds3231_test(void *pvParameters);
 
 //PM7003
 extern void pms7003_task(void *pvParameters);
@@ -45,4 +47,6 @@ void app_main(void)
     // //MH-Z14A
     // init_mhz14a_sensor();
     // read_mhz14a_data();
+    ESP_ERROR_CHECK(i2cdev_init());
+    xTaskCreate(ds3231_test, "ds3231_test", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
 }

@@ -1,0 +1,220 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6200
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr  3 2025 16:28:09[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0eb48h ( 60232) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0001eb70 vaddr=3ffb0000 size=014a8h (  5288) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=2c798h (182168) map[0m
+[0;32mI (180) esp_image: segment 3: paddr=0004c7c0 vaddr=3ffb14a8 size=00ee8h (  3816) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=0004d6b0 vaddr=40080000 size=0f28ch ( 62092) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+[0;32mI (227) cpu_start: Pro cpu up.[0m
+[0;32mI (227) cpu_start: Starting app cpu, entry point is 0x400813d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (241) cpu_start: Pro cpu start user code[0m
+[0;32mI (241) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (241) cpu_start: Application information:[0m
+[0;32mI (243) cpu_start: Project name:     test[0m
+[0;32mI (247) cpu_start: App version:      6cd6761-dirty[0m
+[0;32mI (251) cpu_start: Compile time:     Apr  3 2025 16:27:42[0m
+[0;32mI (256) cpu_start: ELF file SHA256:  8d3d5b09...[0m
+[0;32mI (261) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (264) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (276) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (282) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFB2DB8 len 0002D248 (180 KiB): DRAM[0m
+[0;32mI (293) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008F28C len 00010D74 (67 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (312) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) sdcard_initialize: Initializing SD card[0m
+[0;32mI (342) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (342) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (352) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (562) sdmmc_sd: sdmmc_init_sd_if_cond: send_if_cond (1) returned 0x108[0m
+[1;31mE (562) vfs_fat_sdmmc: sdmmc_card_init failed (0x108).[0m
+[0;32mI (562) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[1;31mE (562) sdcard_initialize: Failed to initialize the card (ESP_ERR_INVALID_RESPONSE). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (582) SDcard: Failed to initialize SD card.[0m
+[0;32mI (582) sdcard_writeDataToFile: Opening file /sdcard/test.txt...[0m
+[1;31mE (592) sdcard_writeDataToFile: Failed to open file for writing.[0m
+[1;31mE (592) SDcard: Failed to write file.[0m
+[0;32mI (602) sdcard_readDataFromFile: Opening file /sdcard/test.txt...[0m
+[1;31mE (602) SDcard: Failed to open file for reading.[0m
+[1;31mE (612) SDcard: Failed to read file.[0m
+[0;32mI (612) sdcard_renameFile: Update file name from /sdcard/test.txt to /sdcard/test1.txt[0m
+[0;32mI (622) sdcard_renameFile: Renaming file /sdcard/test.txt to /sdcard/test1.txt[0m
+[1;31mE (622) sdcard_renameFile: Rename failed[0m
+[1;31mE (632) SDcard: Failed to rename file.[0m
+[1;31mE (632) sdcard_removeFile: File "/sdcard/test1.txt" doesn't exists.[0m
+[1;31mE (642) SDcard: Failed to delete file.[0m
+[0;32mI (642) main_task: Returned from app_main()[0m
+3948-01-00 00:00:00, 29.25 deg Cel
+3948-01-00 00:00:00, 29.25 deg Cel
+3948-01-00 00:00:00, 29.25 deg Cel
+3948-01-00 00:00:00, 29.25 deg Cel
+3948-01-00 00:00:01, 29.25 deg Cel
+3948-01-00 00:00:01, 29.25 deg Cel
+3948-01-00 00:00:01, 29.25 deg Cel
+3948-01-00 00:00:01, 29.25 deg Cel
+3948-01-00 00:00:02, 29.25 deg Cel
+3948-01-00 00:00:02, 29.25 deg Cel
+3948-01-00 00:00:02, 29.25 deg Cel
+3948-01-00 00:00:02, 29.25 deg Cel
+3948-01-00 00:00:03, 29.25 deg Cel
+3948-01-00 00:00:03, 29.25 deg Cel
+3948-01-00 00:00:03, 29.25 deg Cel
+3948-01-00 00:00:03, 29.25 deg Cel
+3948-01-00 00:00:04, 29.25 deg Cel
+3948-01-00 00:00:04, 29.25 deg Cel
+3948-01-00 00:00:04, 29.25 deg Cel
+3948-01-00 00:00:04, 29.25 deg Cel
+3948-01-00 00:00:05, 29.25 deg Cel
+3948-01-00 00:00:05, 29.25 deg Cel
+3948-01-00 00:00:05, 29.25 deg Cel
+3948-01-00 00:00:05, 29.25 deg Cel
+3948-01-00 00:00:06, 29.25 deg Cel
+3948-01-00 00:00:06, 29.25 deg Cel
+3948-01-00 00:00:06, 29.25 deg Cel
+3948-01-00 00:00:06, 29.25 deg Cel
+3948-01-00 00:00:07, 29.25 deg Cel
+3948-01-00 00:00:07, 29.25 deg Cel
+3948-01-00 00:00:07, 29.25 deg Cel
+3948-01-00 00:00:07, 29.25 deg Cel
+3948-01-00 00:00:08, 29.25 deg Cel
+3948-01-00 00:00:08, 29.25 deg Cel
+3948-01-00 00:00:08, 29.25 deg Cel
+3948-01-00 00:00:08, 29.25 deg Cel
+3948-01-00 00:00:09, 29.25 deg Cel
+3948-01-00 00:00:09, 29.25 deg Cel
+3948-01-00 00:00:09, 29.25 deg Cel
+3948-01-00 00:00:09, 29.25 deg Cel
+3948-01-00 00:00:10, 29.25 deg Cel
+3948-01-00 00:00:10, 29.25 deg Cel
+3948-01-00 00:00:10, 29.25 deg Cel
+3948-01-00 00:00:10, 29.25 deg Cel
+3948-01-00 00:00:11, 29.25 deg Cel
+3948-01-00 00:00:11, 29.25 deg Cel
+3948-01-00 00:00:11, 29.25 deg Cel
+3948-01-00 00:00:11, 29.25 deg Cel
+3948-01-00 00:00:12, 29.25 deg Cel
+3948-01-00 00:00:12, 29.25 deg Cel
+3948-01-00 00:00:12, 29.25 deg Cel
+3948-01-00 00:00:12, 29.25 deg Cel
+3948-01-00 00:00:13, 29.25 deg Cel
+3948-01-00 00:00:13, 29.25 deg Cel
+3948-01-00 00:00:13, 29.25 deg Cel
+3948-01-00 00:00:13, 29.25 deg Cel
+3948-01-00 00:00:14, 29.25 deg Cel
+3948-01-00 00:00:14, 29.25 deg Cel
+3948-01-00 00:00:14, 29.25 deg Cel
+3948-01-00 00:00:14, 29.25 deg Cel
+3948-01-00 00:00:15, 29.25 deg Cel
+3948-01-00 00:00:15, 29.25 deg Cel
+3948-01-00 00:00:15, 29.25 deg Cel
+3948-01-00 00:00:15, 29.25 deg Cel
+3948-01-00 00:00:16, 29.25 deg Cel
+3948-01-00 00:00:16, 29.25 deg Cel
+3948-01-00 00:00:16, 29.25 deg Cel
+3948-01-00 00:00:16, 29.25 deg Cel
+3948-01-00 00:00:17, 29.25 deg Cel
+3948-01-00 00:00:17, 29.25 deg Cel
+3948-01-00 00:00:17, 29.25 deg Cel
+3948-01-00 00:00:17, 29.25 deg Cel
+3948-01-00 00:00:18, 29.25 deg Cel
+3948-01-00 00:00:18, 29.25 deg Cel
+3948-01-00 00:00:18, 29.25 deg Cel
+3948-01-00 00:00:18, 29.25 deg Cel
+3948-01-00 00:00:19, 29.25 deg Cel
+3948-01-00 00:00:19, 29.25 deg Cel
+3948-01-00 00:00:19, 29.25 deg Cel
+3948-01-00 00:00:19, 29.25 deg Cel
+3948-01-00 00:00:20, 29.25 deg Cel
+3948-01-00 00:00:20, 29.25 deg Cel
+3948-01-00 00:00:20, 29.25 deg Cel
+3948-01-00 00:00:20, 29.25 deg Cel
+3948-01-00 00:00:21, 29.25 deg Cel
+3948-01-00 00:00:21, 29.25 deg Cel
+3948-01-00 00:00:21, 29.25 deg Cel
+3948-01-00 00:00:21, 29.25 deg Cel
+3948-01-00 00:00:22, 29.25 deg Cel
+3948-01-00 00:00:22, 29.25 deg Cel
+3948-01-00 00:00:22, 29.25 deg Cel
+3948-01-00 00:00:22, 29.25 deg Cel
+3948-01-00 00:00:23, 29.25 deg Cel
+3948-01-00 00:00:23, 29.25 deg Cel
+3948-01-00 00:00:23, 29.25 deg Cel
+3948-01-00 00:00:23, 29.25 deg Cel
+3948-01-00 00:00:24, 29.25 deg Cel
+[1;31mE (25142) i2cdev: Could not read from device [0x68 at 0]: -1 (ESP_FAIL)[0m
+Could not get temperature
+[1;31mE (25392) i2cdev: Could not read from device [0x68 at 0]: -1 (ESP_FAIL)[0m
+Could not get temperature
+[1;31mE (25642) i2cdev: Could not read from device [0x68 at 0]: -1 (ESP_FAIL)[0m
+Could not get temperature
+[1;31mE (25892) i2cdev: Could not read from device [0x68 at 0]: -1 (ESP_FAIL)[0m
+Could not get temperature
+[1;31mE (26142) i2cdev: Could not read from device [0x68 at 0]: -1 (ESP_FAIL)[0m
+Could not get temperature
+3900-01-01 00:00:00, 0.00 deg Cel
+3900-01-01 00:00:00, 29.25 deg Cel
+3900-01-01 00:00:00, 29.25 deg Cel
+3900-01-01 00:00:00, 29.25 deg Cel
+3900-01-01 00:00:01, 29.25 deg Cel
+3900-01-01 00:00:01, 29.25 deg Cel
+3900-01-01 00:00:01, 29.25 deg Cel
+3900-01-01 00:00:01, 29.25 deg Cel
+3900-01-01 00:00:02, 29.25 deg Cel
+3900-01-01 00:00:02, 29.25 deg Cel
+3900-01-01 00:00:02, 29.25 deg Cel
+3900-01-01 00:00:02, 29.25 deg Cel
+3900-01-01 00:00:03, 29.25 deg Cel
+3900-01-01 00:00:03, 29.25 deg Cel
+3900-01-01 00:00:03, 29.25 deg Cel
+3900-01-01 00:00:03, 29.25 deg Cel
+3900-01-01 00:00:04, 29.50 deg Cel
+3900-01-01 00:00:04, 29.50 deg Cel
+3900-01-01 00:00:04, 29.50 deg Cel
+3900-01-01 00:00:04, 29.50 deg Cel
+3900-01-01 00:00:05, 29.50 deg Cel
+3900-01-01 00:00:05, 29.50 deg Cel
+3900-01-01 00:00:05, 29.50 deg Cel
+3900-01-01 00:00:05, 29.50 deg Cel
+3900-01-01 00:00:06, 29.50 deg Cel
+3900-01-01 00:00:06, 29.50 deg Cel
+3900-01-01 00:00:06, 29.50 deg Cel
+3900-01-01 00:00:06, 29.50 deg Cel
+3900-01-01 00:00:07, 29.50 deg Cel
+3900-01-01 00:00:07, 29.50 deg Cel
+3900-01-01 00:00:07, 29.50 deg Cel

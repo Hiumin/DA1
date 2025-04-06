@@ -1,4 +1,4 @@
-idf_component_register(SRCS "sdcard.c" "mhz14a.c" "main.c" "pms7003.c" "bme280.c"
+idf_component_register(SRCS "sdcard.c" "mhz14a.c" "main.c" "pms7003.c" "bme280.c" "DS3231.c"
                     INCLUDE_DIRS "."
-                    REQUIRES BME280 i2cdev driver PMS7003 MH_Z14A FileManager)
+                    REQUIRES BME280 i2cdev driver PMS7003 MH_Z14A FileManager DS3231)
 
