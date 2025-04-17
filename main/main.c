@@ -9,6 +9,7 @@
 #include "esp_mac.h"
 #include "sdcard.h"
 #include "ds3231.h"
+#include "DS3231Time.h"
 
 //SDCARD
 extern void init_sdcard(void);
@@ -17,6 +18,7 @@ extern void read_file(const char *nameFile);
 extern void delete_file(const char *nameFile);
 extern void rename_file(const char *oldNameFile, char *newNameFile);
 extern void ds3231_test(void *pvParameters);
+
 
 //PM7003
 extern void pms7003_task(void *pvParameters);
@@ -32,11 +34,11 @@ extern void read_and_save_bme280_data(void);
 void app_main(void)
 {
     //SDCARD
-    init_sdcard();
-    write_file("test");
-    read_file("test");
-    rename_file("test","test1");
-    delete_file("test1");
+    // init_sdcard();
+    // write_file("test");
+    // read_file("test");
+    // rename_file("test","test1");
+    // delete_file("test1");
     // //PMS7003
     // xTaskCreate(pms7003_task, "pms7003_task", 4096, NULL, 5, NULL);
     

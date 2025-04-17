@@ -1,0 +1,950 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6200
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr  3 2025 16:28:09[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aae0h ( 43744) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001ab08 vaddr=3ffb0000 size=02150h (  8528) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001cc60 vaddr=40080000 size=033b8h ( 13240) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1a250h (107088) map[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003a278 vaddr=400833b8 size=0a19ch ( 41372) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu up.[0m
+[0;32mI (189) cpu_start: Starting app cpu, entry point is 0x4008121c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     test[0m
+[0;32mI (208) cpu_start: App version:      ff8af93-dirty[0m
+[0;32mI (212) cpu_start: Compile time:     Apr 17 2025 14:58:23[0m
+[0;32mI (218) cpu_start: ELF file SHA256:  4bec0ca3...[0m
+[0;32mI (222) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (226) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (230) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (233) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2A70 len 0002D590 (181 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (271) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (277) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) app_start: Starting scheduler on CPU0[0m
+[0;32mI (293) app_start: Starting scheduler on CPU1[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) ds3231_initialize: DS3231 module initialize success.[0m
+[0;32mI (303) main_task: Returned from app_main()[0m
+[0;32mI (303) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (313) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:18[0m
+[0;32mI (323) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:18[0m
+[0;32mI (323) ds3231_isNewMinute: New minute.[0m
+[0;32mI (333) ds3231_test: 🟢 Một phút mới đã đến![0m
+[0;32mI (333) ds3231_isNewDay: New day come.[0m
+[0;32mI (343) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (343) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (353) ds3231_test: 📆 Epoch Time: 1742158970[0m
+[0;32mI (1353) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (1353) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:19[0m
+[0;32mI (1353) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:19[0m
+[0;32mI (1363) ds3231_isNewDay: New day come.[0m
+[0;32mI (1363) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (1363) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (1373) ds3231_test: 📆 Epoch Time: 1742158971[0m
+[0;32mI (2373) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (2373) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:20[0m
+[0;32mI (2373) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:20[0m
+[0;32mI (2383) ds3231_isNewDay: New day come.[0m
+[0;32mI (2383) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (2383) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (2393) ds3231_test: 📆 Epoch Time: 1742158972[0m
+[0;32mI (3393) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (3393) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:21[0m
+[0;32mI (3393) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:21[0m
+[0;32mI (3403) ds3231_isNewDay: New day come.[0m
+[0;32mI (3403) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (3403) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (3413) ds3231_test: 📆 Epoch Time: 1742158973[0m
+[0;32mI (4413) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (4413) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:22[0m
+[0;32mI (4413) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:22[0m
+[0;32mI (4423) ds3231_isNewDay: New day come.[0m
+[0;32mI (4423) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (4423) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (4433) ds3231_test: 📆 Epoch Time: 1742158974[0m
+[0;32mI (5433) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5433) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:23[0m
+[0;32mI (5433) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:23[0m
+[0;32mI (5443) ds3231_isNewDay: New day come.[0m
+[0;32mI (5443) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (5443) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (5453) ds3231_test: 📆 Epoch Time: 1742158975[0m
+[0;32mI (6453) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (6453) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:24[0m
+[0;32mI (6453) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:24[0m
+[0;32mI (6463) ds3231_isNewDay: New day come.[0m
+[0;32mI (6463) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (6463) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (6473) ds3231_test: 📆 Epoch Time: 1742158976[0m
+[0;32mI (7473) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (7473) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:25[0m
+[0;32mI (7473) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:25[0m
+[0;32mI (7483) ds3231_isNewDay: New day come.[0m
+[0;32mI (7483) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (7483) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (7493) ds3231_test: 📆 Epoch Time: 1742158977[0m
+[0;32mI (8493) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (8493) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:26[0m
+[0;32mI (8493) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:26[0m
+[0;32mI (8503) ds3231_isNewDay: New day come.[0m
+[0;32mI (8503) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (8503) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (8513) ds3231_test: 📆 Epoch Time: 1742158978[0m
+[0;32mI (9513) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (9513) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:27[0m
+[0;32mI (9513) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:27[0m
+[0;32mI (9523) ds3231_isNewDay: New day come.[0m
+[0;32mI (9523) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (9523) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (9533) ds3231_test: 📆 Epoch Time: 1742158979[0m
+[0;32mI (10533) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10533) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:28[0m
+[0;32mI (10533) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:28[0m
+[0;32mI (10543) ds3231_isNewDay: New day come.[0m
+[0;32mI (10543) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (10543) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (10553) ds3231_test: 📆 Epoch Time: 1742158980[0m
+[0;32mI (11553) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (11553) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:29[0m
+[0;32mI (11553) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:29[0m
+[0;32mI (11563) ds3231_isNewDay: New day come.[0m
+[0;32mI (11563) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (11563) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (11573) ds3231_test: 📆 Epoch Time: 1742158981[0m
+[0;32mI (12573) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (12573) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:30[0m
+[0;32mI (12573) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:30[0m
+[0;32mI (12583) ds3231_isNewDay: New day come.[0m
+[0;32mI (12583) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (12583) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (12593) ds3231_test: 📆 Epoch Time: 1742158982[0m
+[0;32mI (13593) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (13593) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:31[0m
+[0;32mI (13593) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:31[0m
+[0;32mI (13603) ds3231_isNewDay: New day come.[0m
+[0;32mI (13603) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (13603) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (13613) ds3231_test: 📆 Epoch Time: 1742158983[0m
+[0;32mI (14613) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (14613) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:32[0m
+[0;32mI (14613) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:32[0m
+[0;32mI (14623) ds3231_isNewDay: New day come.[0m
+[0;32mI (14623) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (14623) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (14633) ds3231_test: 📆 Epoch Time: 1742158984[0m
+[0;32mI (15633) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (15633) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:33[0m
+[0;32mI (15633) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:33[0m
+[0;32mI (15643) ds3231_isNewDay: New day come.[0m
+[0;32mI (15643) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (15643) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (15653) ds3231_test: 📆 Epoch Time: 1742158985[0m
+[0;32mI (16653) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (16653) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:34[0m
+[0;32mI (16653) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:34[0m
+[0;32mI (16663) ds3231_isNewDay: New day come.[0m
+[0;32mI (16663) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (16663) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (16673) ds3231_test: 📆 Epoch Time: 1742158986[0m
+[0;32mI (17673) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (17673) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:35[0m
+[0;32mI (17673) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:35[0m
+[0;32mI (17683) ds3231_isNewDay: New day come.[0m
+[0;32mI (17683) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (17683) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (17693) ds3231_test: 📆 Epoch Time: 1742158987[0m
+[0;32mI (18693) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (18693) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:36[0m
+[0;32mI (18693) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:36[0m
+[0;32mI (18703) ds3231_isNewDay: New day come.[0m
+[0;32mI (18703) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (18703) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (18713) ds3231_test: 📆 Epoch Time: 1742158988[0m
+[0;32mI (19713) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (19713) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:37[0m
+[0;32mI (19713) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:37[0m
+[0;32mI (19723) ds3231_isNewDay: New day come.[0m
+[0;32mI (19723) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (19723) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (19733) ds3231_test: 📆 Epoch Time: 1742158989[0m
+[0;32mI (20733) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (20733) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:38[0m
+[0;32mI (20733) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:38[0m
+[0;32mI (20743) ds3231_isNewDay: New day come.[0m
+[0;32mI (20743) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (20743) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (20753) ds3231_test: 📆 Epoch Time: 1742158990[0m
+[0;32mI (21753) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (21753) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:39[0m
+[0;32mI (21753) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:39[0m
+[0;32mI (21763) ds3231_isNewDay: New day come.[0m
+[0;32mI (21763) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (21763) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (21773) ds3231_test: 📆 Epoch Time: 1742158991[0m
+[0;32mI (22773) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (22773) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:40[0m
+[0;32mI (22773) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:40[0m
+[0;32mI (22783) ds3231_isNewDay: New day come.[0m
+[0;32mI (22783) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (22783) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (22793) ds3231_test: 📆 Epoch Time: 1742158992[0m
+[0;32mI (23793) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (23793) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:41[0m
+[0;32mI (23793) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:41[0m
+[0;32mI (23803) ds3231_isNewDay: New day come.[0m
+[0;32mI (23803) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (23803) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (23813) ds3231_test: 📆 Epoch Time: 1742158993[0m
+[0;32mI (24813) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (24813) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:42[0m
+[0;32mI (24813) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:42[0m
+[0;32mI (24823) ds3231_isNewDay: New day come.[0m
+[0;32mI (24823) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (24823) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (24833) ds3231_test: 📆 Epoch Time: 1742158994[0m
+[0;32mI (25833) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (25833) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:43[0m
+[0;32mI (25833) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:43[0m
+[0;32mI (25843) ds3231_isNewDay: New day come.[0m
+[0;32mI (25843) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (25843) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (25853) ds3231_test: 📆 Epoch Time: 1742158995[0m
+[0;32mI (26853) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (26853) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:44[0m
+[0;32mI (26853) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:44[0m
+[0;32mI (26863) ds3231_isNewDay: New day come.[0m
+[0;32mI (26863) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (26863) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (26873) ds3231_test: 📆 Epoch Time: 1742158996[0m
+[0;32mI (27873) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (27873) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:45[0m
+[0;32mI (27873) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:45[0m
+[0;32mI (27883) ds3231_isNewDay: New day come.[0m
+[0;32mI (27883) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (27883) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (27893) ds3231_test: 📆 Epoch Time: 1742158997[0m
+[0;32mI (28893) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (28893) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:46[0m
+[0;32mI (28893) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:46[0m
+[0;32mI (28903) ds3231_isNewDay: New day come.[0m
+[0;32mI (28903) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (28903) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (28913) ds3231_test: 📆 Epoch Time: 1742158998[0m
+[0;32mI (29913) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (29913) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:47[0m
+[0;32mI (29913) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:47[0m
+[0;32mI (29923) ds3231_isNewDay: New day come.[0m
+[0;32mI (29923) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (29923) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (29933) ds3231_test: 📆 Epoch Time: 1742158999[0m
+[0;32mI (30933) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (30933) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:48[0m
+[0;32mI (30933) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:48[0m
+[0;32mI (30943) ds3231_isNewDay: New day come.[0m
+[0;32mI (30943) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (30943) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (30953) ds3231_test: 📆 Epoch Time: 1742159000[0m
+[0;32mI (31953) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (31953) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:49[0m
+[0;32mI (31953) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:49[0m
+[0;32mI (31963) ds3231_isNewDay: New day come.[0m
+[0;32mI (31963) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (31963) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (31973) ds3231_test: 📆 Epoch Time: 1742159001[0m
+[0;32mI (32973) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (32973) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:50[0m
+[0;32mI (32973) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:50[0m
+[0;32mI (32983) ds3231_isNewDay: New day come.[0m
+[0;32mI (32983) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (32983) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (32993) ds3231_test: 📆 Epoch Time: 1742159002[0m
+[0;32mI (33993) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (33993) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:51[0m
+[0;32mI (33993) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:51[0m
+[0;32mI (34003) ds3231_isNewDay: New day come.[0m
+[0;32mI (34003) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (34003) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (34013) ds3231_test: 📆 Epoch Time: 1742159003[0m
+[0;32mI (35013) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (35013) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:52[0m
+[0;32mI (35013) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:52[0m
+[0;32mI (35023) ds3231_isNewDay: New day come.[0m
+[0;32mI (35023) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (35023) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (35033) ds3231_test: 📆 Epoch Time: 1742159004[0m
+[0;32mI (36033) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (36033) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:53[0m
+[0;32mI (36033) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:53[0m
+[0;32mI (36043) ds3231_isNewDay: New day come.[0m
+[0;32mI (36043) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (36043) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (36053) ds3231_test: 📆 Epoch Time: 1742159005[0m
+[0;32mI (37053) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (37053) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:54[0m
+[0;32mI (37053) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:54[0m
+[0;32mI (37063) ds3231_isNewDay: New day come.[0m
+[0;32mI (37063) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (37063) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (37073) ds3231_test: 📆 Epoch Time: 1742159006[0m
+[0;32mI (38073) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (38073) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:55[0m
+[0;32mI (38073) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:55[0m
+[0;32mI (38083) ds3231_isNewDay: New day come.[0m
+[0;32mI (38083) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (38083) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (38093) ds3231_test: 📆 Epoch Time: 1742159007[0m
+[0;32mI (39093) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (39093) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:56[0m
+[0;32mI (39093) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:56[0m
+[0;32mI (39103) ds3231_isNewDay: New day come.[0m
+[0;32mI (39103) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (39103) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (39113) ds3231_test: 📆 Epoch Time: 1742159008[0m
+[0;32mI (40113) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (40113) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:57[0m
+[0;32mI (40113) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:57[0m
+[0;32mI (40123) ds3231_isNewDay: New day come.[0m
+[0;32mI (40123) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (40123) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (40133) ds3231_test: 📆 Epoch Time: 1742159009[0m
+[0;32mI (41133) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (41133) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:58[0m
+[0;32mI (41133) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:58[0m
+[0;32mI (41143) ds3231_isNewDay: New day come.[0m
+[0;32mI (41143) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (41143) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (41153) ds3231_test: 📆 Epoch Time: 1742159010[0m
+[0;32mI (42153) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (42153) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:15:59[0m
+[0;32mI (42153) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:15:59[0m
+[0;32mI (42163) ds3231_isNewDay: New day come.[0m
+[0;32mI (42163) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (42163) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (42173) ds3231_test: 📆 Epoch Time: 1742159011[0m
+[0;32mI (43173) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (43173) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:0[0m
+[0;32mI (43173) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:0[0m
+[0;32mI (43173) ds3231_isNewMinute: New minute.[0m
+[0;32mI (43183) ds3231_test: 🟢 Một phút mới đã đến![0m
+[0;32mI (43183) ds3231_isNewDay: New day come.[0m
+[0;32mI (43193) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (43193) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (43203) ds3231_test: 📆 Epoch Time: 1742159012[0m
+[0;32mI (44203) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (44203) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:1[0m
+[0;32mI (44203) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:1[0m
+[0;32mI (44213) ds3231_isNewDay: New day come.[0m
+[0;32mI (44213) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (44213) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (44223) ds3231_test: 📆 Epoch Time: 1742159014[0m
+[0;32mI (45223) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (45223) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:3[0m
+[0;32mI (45223) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:3[0m
+[0;32mI (45233) ds3231_isNewDay: New day come.[0m
+[0;32mI (45233) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (45233) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (45243) ds3231_test: 📆 Epoch Time: 1742159015[0m
+[0;32mI (46243) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (46243) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:4[0m
+[0;32mI (46243) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:4[0m
+[0;32mI (46253) ds3231_isNewDay: New day come.[0m
+[0;32mI (46253) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (46253) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (46263) ds3231_test: 📆 Epoch Time: 1742159016[0m
+[0;32mI (47263) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (47263) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:5[0m
+[0;32mI (47263) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:5[0m
+[0;32mI (47273) ds3231_isNewDay: New day come.[0m
+[0;32mI (47273) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (47273) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (47283) ds3231_test: 📆 Epoch Time: 1742159017[0m
+[0;32mI (48283) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (48283) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:6[0m
+[0;32mI (48283) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:6[0m
+[0;32mI (48293) ds3231_isNewDay: New day come.[0m
+[0;32mI (48293) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (48293) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (48303) ds3231_test: 📆 Epoch Time: 1742159018[0m
+[0;32mI (49303) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (49303) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:7[0m
+[0;32mI (49303) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:7[0m
+[0;32mI (49313) ds3231_isNewDay: New day come.[0m
+[0;32mI (49313) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (49313) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (49323) ds3231_test: 📆 Epoch Time: 1742159019[0m
+[0;32mI (50323) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (50323) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:8[0m
+[0;32mI (50323) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:8[0m
+[0;32mI (50333) ds3231_isNewDay: New day come.[0m
+[0;32mI (50333) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (50333) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (50343) ds3231_test: 📆 Epoch Time: 1742159020[0m
+[0;32mI (51343) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (51343) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:9[0m
+[0;32mI (51343) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:9[0m
+[0;32mI (51353) ds3231_isNewDay: New day come.[0m
+[0;32mI (51353) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (51353) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (51363) ds3231_test: 📆 Epoch Time: 1742159021[0m
+[0;32mI (52363) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (52363) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:10[0m
+[0;32mI (52363) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:10[0m
+[0;32mI (52373) ds3231_isNewDay: New day come.[0m
+[0;32mI (52373) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (52373) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (52383) ds3231_test: 📆 Epoch Time: 1742159022[0m
+[0;32mI (53383) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (53383) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:11[0m
+[0;32mI (53383) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:11[0m
+[0;32mI (53393) ds3231_isNewDay: New day come.[0m
+[0;32mI (53393) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (53393) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (53403) ds3231_test: 📆 Epoch Time: 1742159023[0m
+[0;32mI (54403) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (54403) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:12[0m
+[0;32mI (54403) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:12[0m
+[0;32mI (54413) ds3231_isNewDay: New day come.[0m
+[0;32mI (54413) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (54413) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (54423) ds3231_test: 📆 Epoch Time: 1742159024[0m
+[0;32mI (55423) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (55423) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:13[0m
+[0;32mI (55423) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:13[0m
+[0;32mI (55433) ds3231_isNewDay: New day come.[0m
+[0;32mI (55433) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (55433) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (55443) ds3231_test: 📆 Epoch Time: 1742159025[0m
+[0;32mI (56443) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (56443) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:14[0m
+[0;32mI (56443) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:14[0m
+[0;32mI (56453) ds3231_isNewDay: New day come.[0m
+[0;32mI (56453) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (56453) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (56463) ds3231_test: 📆 Epoch Time: 1742159026[0m
+[0;32mI (57463) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (57463) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:15[0m
+[0;32mI (57463) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:15[0m
+[0;32mI (57473) ds3231_isNewDay: New day come.[0m
+[0;32mI (57473) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (57473) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (57483) ds3231_test: 📆 Epoch Time: 1742159027[0m
+[0;32mI (58483) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (58483) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:16[0m
+[0;32mI (58483) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:16[0m
+[0;32mI (58493) ds3231_isNewDay: New day come.[0m
+[0;32mI (58493) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (58493) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (58503) ds3231_test: 📆 Epoch Time: 1742159028[0m
+[0;32mI (59503) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (59503) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:17[0m
+[0;32mI (59503) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:17[0m
+[0;32mI (59513) ds3231_isNewDay: New day come.[0m
+[0;32mI (59513) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (59513) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (59523) ds3231_test: 📆 Epoch Time: 1742159029[0m
+[0;32mI (60523) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (60523) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:18[0m
+[0;32mI (60523) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:18[0m
+[0;32mI (60533) ds3231_isNewDay: New day come.[0m
+[0;32mI (60533) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (60533) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (60543) ds3231_test: 📆 Epoch Time: 1742159030[0m
+[0;32mI (61543) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (61543) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:19[0m
+[0;32mI (61543) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:19[0m
+[0;32mI (61553) ds3231_isNewDay: New day come.[0m
+[0;32mI (61553) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (61553) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (61563) ds3231_test: 📆 Epoch Time: 1742159031[0m
+[0;32mI (62563) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (62563) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:20[0m
+[0;32mI (62563) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:20[0m
+[0;32mI (62573) ds3231_isNewDay: New day come.[0m
+[0;32mI (62573) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (62573) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (62583) ds3231_test: 📆 Epoch Time: 1742159032[0m
+[0;32mI (63583) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (63583) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:21[0m
+[0;32mI (63583) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:21[0m
+[0;32mI (63593) ds3231_isNewDay: New day come.[0m
+[0;32mI (63593) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (63593) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (63603) ds3231_test: 📆 Epoch Time: 1742159033[0m
+[0;32mI (64603) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (64603) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:22[0m
+[0;32mI (64603) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:22[0m
+[0;32mI (64613) ds3231_isNewDay: New day come.[0m
+[0;32mI (64613) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (64613) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (64623) ds3231_test: 📆 Epoch Time: 1742159034[0m
+[0;32mI (65623) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (65623) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:23[0m
+[0;32mI (65623) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:23[0m
+[0;32mI (65633) ds3231_isNewDay: New day come.[0m
+[0;32mI (65633) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (65633) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (65643) ds3231_test: 📆 Epoch Time: 1742159035[0m
+[0;32mI (66643) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (66643) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:24[0m
+[0;32mI (66643) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:24[0m
+[0;32mI (66653) ds3231_isNewDay: New day come.[0m
+[0;32mI (66653) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (66653) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (66663) ds3231_test: 📆 Epoch Time: 1742159036[0m
+[0;32mI (67663) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (67663) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:25[0m
+[0;32mI (67663) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:25[0m
+[0;32mI (67673) ds3231_isNewDay: New day come.[0m
+[0;32mI (67673) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (67673) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (67683) ds3231_test: 📆 Epoch Time: 1742159037[0m
+[0;32mI (68683) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (68683) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:26[0m
+[0;32mI (68683) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:26[0m
+[0;32mI (68693) ds3231_isNewDay: New day come.[0m
+[0;32mI (68693) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (68693) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (68703) ds3231_test: 📆 Epoch Time: 1742159038[0m
+[0;32mI (69703) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (69703) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:27[0m
+[0;32mI (69703) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:27[0m
+[0;32mI (69713) ds3231_isNewDay: New day come.[0m
+[0;32mI (69713) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (69713) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (69723) ds3231_test: 📆 Epoch Time: 1742159039[0m
+[0;32mI (70723) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (70723) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:28[0m
+[0;32mI (70723) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:28[0m
+[0;32mI (70733) ds3231_isNewDay: New day come.[0m
+[0;32mI (70733) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (70733) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (70743) ds3231_test: 📆 Epoch Time: 1742159040[0m
+[0;32mI (71743) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (71743) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:29[0m
+[0;32mI (71743) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:29[0m
+[0;32mI (71753) ds3231_isNewDay: New day come.[0m
+[0;32mI (71753) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (71753) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (71763) ds3231_test: 📆 Epoch Time: 1742159041[0m
+[0;32mI (72763) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (72763) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:30[0m
+[0;32mI (72763) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:30[0m
+[0;32mI (72773) ds3231_isNewDay: New day come.[0m
+[0;32mI (72773) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (72773) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (72783) ds3231_test: 📆 Epoch Time: 1742159042[0m
+[0;32mI (73783) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (73783) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:31[0m
+[0;32mI (73783) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:31[0m
+[0;32mI (73793) ds3231_isNewDay: New day come.[0m
+[0;32mI (73793) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (73793) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (73803) ds3231_test: 📆 Epoch Time: 1742159043[0m
+[0;32mI (74803) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (74803) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:32[0m
+[0;32mI (74803) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:32[0m
+[0;32mI (74813) ds3231_isNewDay: New day come.[0m
+[0;32mI (74813) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (74813) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (74823) ds3231_test: 📆 Epoch Time: 1742159044[0m
+[0;32mI (75823) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (75823) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:33[0m
+[0;32mI (75823) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:33[0m
+[0;32mI (75833) ds3231_isNewDay: New day come.[0m
+[0;32mI (75833) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (75833) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (75843) ds3231_test: 📆 Epoch Time: 1742159045[0m
+[0;32mI (76843) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (76843) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:34[0m
+[0;32mI (76843) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:34[0m
+[0;32mI (76853) ds3231_isNewDay: New day come.[0m
+[0;32mI (76853) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (76853) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (76863) ds3231_test: 📆 Epoch Time: 1742159046[0m
+[0;32mI (77863) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (77863) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:35[0m
+[0;32mI (77863) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:35[0m
+[0;32mI (77873) ds3231_isNewDay: New day come.[0m
+[0;32mI (77873) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (77873) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (77883) ds3231_test: 📆 Epoch Time: 1742159047[0m
+[0;32mI (78883) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (78883) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:36[0m
+[0;32mI (78883) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:36[0m
+[0;32mI (78893) ds3231_isNewDay: New day come.[0m
+[0;32mI (78893) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (78893) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (78903) ds3231_test: 📆 Epoch Time: 1742159048[0m
+[0;32mI (79903) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (79903) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:37[0m
+[0;32mI (79903) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:37[0m
+[0;32mI (79913) ds3231_isNewDay: New day come.[0m
+[0;32mI (79913) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (79913) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (79923) ds3231_test: 📆 Epoch Time: 1742159049[0m
+[0;32mI (80923) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (80923) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:38[0m
+[0;32mI (80923) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:38[0m
+[0;32mI (80933) ds3231_isNewDay: New day come.[0m
+[0;32mI (80933) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (80933) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (80943) ds3231_test: 📆 Epoch Time: 1742159050[0m
+[0;32mI (81943) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (81943) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:39[0m
+[0;32mI (81943) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:39[0m
+[0;32mI (81953) ds3231_isNewDay: New day come.[0m
+[0;32mI (81953) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (81953) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (81963) ds3231_test: 📆 Epoch Time: 1742159051[0m
+[0;32mI (82963) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (82963) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:40[0m
+[0;32mI (82963) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:40[0m
+[0;32mI (82973) ds3231_isNewDay: New day come.[0m
+[0;32mI (82973) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (82973) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (82983) ds3231_test: 📆 Epoch Time: 1742159052[0m
+[0;32mI (83983) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (83983) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:41[0m
+[0;32mI (83983) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:41[0m
+[0;32mI (83993) ds3231_isNewDay: New day come.[0m
+[0;32mI (83993) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (83993) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (84003) ds3231_test: 📆 Epoch Time: 1742159053[0m
+[0;32mI (85003) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (85003) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:42[0m
+[0;32mI (85003) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:42[0m
+[0;32mI (85013) ds3231_isNewDay: New day come.[0m
+[0;32mI (85013) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (85013) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (85023) ds3231_test: 📆 Epoch Time: 1742159054[0m
+[0;32mI (86023) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (86023) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:43[0m
+[0;32mI (86023) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:43[0m
+[0;32mI (86033) ds3231_isNewDay: New day come.[0m
+[0;32mI (86033) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (86033) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (86043) ds3231_test: 📆 Epoch Time: 1742159055[0m
+[0;32mI (87043) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (87043) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:44[0m
+[0;32mI (87043) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:44[0m
+[0;32mI (87053) ds3231_isNewDay: New day come.[0m
+[0;32mI (87053) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (87053) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (87063) ds3231_test: 📆 Epoch Time: 1742159056[0m
+[0;32mI (88063) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (88063) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:45[0m
+[0;32mI (88063) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:45[0m
+[0;32mI (88073) ds3231_isNewDay: New day come.[0m
+[0;32mI (88073) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (88073) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (88083) ds3231_test: 📆 Epoch Time: 1742159057[0m
+[0;32mI (89083) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (89083) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:46[0m
+[0;32mI (89083) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:46[0m
+[0;32mI (89093) ds3231_isNewDay: New day come.[0m
+[0;32mI (89093) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (89093) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (89103) ds3231_test: 📆 Epoch Time: 1742159058[0m
+[0;32mI (90103) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (90103) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:47[0m
+[0;32mI (90103) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:47[0m
+[0;32mI (90113) ds3231_isNewDay: New day come.[0m
+[0;32mI (90113) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (90113) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (90123) ds3231_test: 📆 Epoch Time: 1742159059[0m
+[0;32mI (91123) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (91123) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:48[0m
+[0;32mI (91123) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:48[0m
+[0;32mI (91133) ds3231_isNewDay: New day come.[0m
+[0;32mI (91133) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (91133) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (91143) ds3231_test: 📆 Epoch Time: 1742159060[0m
+[0;32mI (92143) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (92143) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:49[0m
+[0;32mI (92143) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:49[0m
+[0;32mI (92153) ds3231_isNewDay: New day come.[0m
+[0;32mI (92153) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (92153) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (92163) ds3231_test: 📆 Epoch Time: 1742159061[0m
+[0;32mI (93163) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (93163) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:50[0m
+[0;32mI (93163) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:50[0m
+[0;32mI (93173) ds3231_isNewDay: New day come.[0m
+[0;32mI (93173) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (93173) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (93183) ds3231_test: 📆 Epoch Time: 1742159062[0m
+[0;32mI (94183) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (94183) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:51[0m
+[0;32mI (94183) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:51[0m
+[0;32mI (94193) ds3231_isNewDay: New day come.[0m
+[0;32mI (94193) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (94193) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (94203) ds3231_test: 📆 Epoch Time: 1742159063[0m
+[0;32mI (95203) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (95203) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:52[0m
+[0;32mI (95203) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:52[0m
+[0;32mI (95213) ds3231_isNewDay: New day come.[0m
+[0;32mI (95213) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (95213) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (95223) ds3231_test: 📆 Epoch Time: 1742159065[0m
+[0;32mI (96223) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (96223) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:54[0m
+[0;32mI (96223) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:54[0m
+[0;32mI (96233) ds3231_isNewDay: New day come.[0m
+[0;32mI (96233) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (96233) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (96243) ds3231_test: 📆 Epoch Time: 1742159066[0m
+[0;32mI (97243) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (97243) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:55[0m
+[0;32mI (97243) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:55[0m
+[0;32mI (97253) ds3231_isNewDay: New day come.[0m
+[0;32mI (97253) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (97253) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (97263) ds3231_test: 📆 Epoch Time: 1742159067[0m
+[0;32mI (98263) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (98263) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:56[0m
+[0;32mI (98263) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:56[0m
+[0;32mI (98273) ds3231_isNewDay: New day come.[0m
+[0;32mI (98273) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (98273) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (98283) ds3231_test: 📆 Epoch Time: 1742159068[0m
+[0;32mI (99283) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (99283) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:57[0m
+[0;32mI (99283) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:57[0m
+[0;32mI (99293) ds3231_isNewDay: New day come.[0m
+[0;32mI (99293) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (99293) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (99303) ds3231_test: 📆 Epoch Time: 1742159069[0m
+[0;32mI (100303) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (100303) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:58[0m
+[0;32mI (100303) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:58[0m
+[0;32mI (100313) ds3231_isNewDay: New day come.[0m
+[0;32mI (100313) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (100313) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (100323) ds3231_test: 📆 Epoch Time: 1742159070[0m
+[0;32mI (101323) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (101323) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:16:59[0m
+[0;32mI (101323) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:16:59[0m
+[0;32mI (101333) ds3231_isNewDay: New day come.[0m
+[0;32mI (101333) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (101333) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (101343) ds3231_test: 📆 Epoch Time: 1742159071[0m
+[0;32mI (102343) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (102343) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:0[0m
+[0;32mI (102343) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:0[0m
+[0;32mI (102343) ds3231_isNewMinute: New minute.[0m
+[0;32mI (102353) ds3231_test: 🟢 Một phút mới đã đến![0m
+[0;32mI (102353) ds3231_isNewDay: New day come.[0m
+[0;32mI (102363) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (102363) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (102373) ds3231_test: 📆 Epoch Time: 1742159072[0m
+[0;32mI (103373) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (103373) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:1[0m
+[0;32mI (103373) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:1[0m
+[0;32mI (103383) ds3231_isNewDay: New day come.[0m
+[0;32mI (103383) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (103383) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (103393) ds3231_test: 📆 Epoch Time: 1742159073[0m
+[0;32mI (104393) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (104393) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:2[0m
+[0;32mI (104393) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:2[0m
+[0;32mI (104403) ds3231_isNewDay: New day come.[0m
+[0;32mI (104403) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (104403) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (104413) ds3231_test: 📆 Epoch Time: 1742159074[0m
+[0;32mI (105413) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (105413) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:3[0m
+[0;32mI (105413) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:3[0m
+[0;32mI (105423) ds3231_isNewDay: New day come.[0m
+[0;32mI (105423) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (105423) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (105433) ds3231_test: 📆 Epoch Time: 1742159075[0m
+[0;32mI (106433) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (106433) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:4[0m
+[0;32mI (106433) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:4[0m
+[0;32mI (106443) ds3231_isNewDay: New day come.[0m
+[0;32mI (106443) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (106443) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (106453) ds3231_test: 📆 Epoch Time: 1742159076[0m
+[0;32mI (107453) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (107453) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:5[0m
+[0;32mI (107453) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:5[0m
+[0;32mI (107463) ds3231_isNewDay: New day come.[0m
+[0;32mI (107463) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (107463) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (107473) ds3231_test: 📆 Epoch Time: 1742159077[0m
+[0;32mI (108473) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (108473) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:6[0m
+[0;32mI (108473) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:6[0m
+[0;32mI (108483) ds3231_isNewDay: New day come.[0m
+[0;32mI (108483) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (108483) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (108493) ds3231_test: 📆 Epoch Time: 1742159078[0m
+[0;32mI (109493) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (109493) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:7[0m
+[0;32mI (109493) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:7[0m
+[0;32mI (109503) ds3231_isNewDay: New day come.[0m
+[0;32mI (109503) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (109503) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (109513) ds3231_test: 📆 Epoch Time: 1742159079[0m
+[0;32mI (110513) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (110513) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:8[0m
+[0;32mI (110513) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:8[0m
+[0;32mI (110523) ds3231_isNewDay: New day come.[0m
+[0;32mI (110523) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (110523) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (110533) ds3231_test: 📆 Epoch Time: 1742159080[0m
+[0;32mI (111533) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (111533) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:9[0m
+[0;32mI (111533) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:9[0m
+[0;32mI (111543) ds3231_isNewDay: New day come.[0m
+[0;32mI (111543) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (111543) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (111553) ds3231_test: 📆 Epoch Time: 1742159081[0m
+[0;32mI (112553) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (112553) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:10[0m
+[0;32mI (112553) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:10[0m
+[0;32mI (112563) ds3231_isNewDay: New day come.[0m
+[0;32mI (112563) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (112563) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (112573) ds3231_test: 📆 Epoch Time: 1742159082[0m
+[0;32mI (113573) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (113573) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:11[0m
+[0;32mI (113573) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:11[0m
+[0;32mI (113583) ds3231_isNewDay: New day come.[0m
+[0;32mI (113583) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (113583) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (113593) ds3231_test: 📆 Epoch Time: 1742159083[0m
+[0;32mI (114593) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (114593) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:12[0m
+[0;32mI (114593) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:12[0m
+[0;32mI (114603) ds3231_isNewDay: New day come.[0m
+[0;32mI (114603) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (114603) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (114613) ds3231_test: 📆 Epoch Time: 1742159084[0m
+[0;32mI (115613) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (115613) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:13[0m
+[0;32mI (115613) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:13[0m
+[0;32mI (115623) ds3231_isNewDay: New day come.[0m
+[0;32mI (115623) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (115623) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (115633) ds3231_test: 📆 Epoch Time: 1742159085[0m
+[0;32mI (116633) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (116633) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:14[0m
+[0;32mI (116633) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:14[0m
+[0;32mI (116643) ds3231_isNewDay: New day come.[0m
+[0;32mI (116643) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (116643) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (116653) ds3231_test: 📆 Epoch Time: 1742159086[0m
+[0;32mI (117653) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (117653) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:15[0m
+[0;32mI (117653) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:15[0m
+[0;32mI (117663) ds3231_isNewDay: New day come.[0m
+[0;32mI (117663) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (117663) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (117673) ds3231_test: 📆 Epoch Time: 1742159087[0m
+[0;32mI (118673) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (118673) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:16[0m
+[0;32mI (118673) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:16[0m
+[0;32mI (118683) ds3231_isNewDay: New day come.[0m
+[0;32mI (118683) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (118683) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (118693) ds3231_test: 📆 Epoch Time: 1742159088[0m
+[0;32mI (119693) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (119693) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:17[0m
+[0;32mI (119693) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:17[0m
+[0;32mI (119703) ds3231_isNewDay: New day come.[0m
+[0;32mI (119703) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (119703) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (119713) ds3231_test: 📆 Epoch Time: 1742159089[0m
+[0;32mI (120713) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (120713) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:18[0m
+[0;32mI (120713) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:18[0m
+[0;32mI (120723) ds3231_isNewDay: New day come.[0m
+[0;32mI (120723) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (120723) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (120733) ds3231_test: 📆 Epoch Time: 1742159090[0m
+[0;32mI (121733) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (121733) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:19[0m
+[0;32mI (121733) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:19[0m
+[0;32mI (121743) ds3231_isNewDay: New day come.[0m
+[0;32mI (121743) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (121743) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (121753) ds3231_test: 📆 Epoch Time: 1742159091[0m
+[0;32mI (122753) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (122753) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:20[0m
+[0;32mI (122753) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:20[0m
+[0;32mI (122763) ds3231_isNewDay: New day come.[0m
+[0;32mI (122763) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (122763) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (122773) ds3231_test: 📆 Epoch Time: 1742159092[0m
+[0;32mI (123773) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (123773) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:21[0m
+[0;32mI (123773) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:21[0m
+[0;32mI (123783) ds3231_isNewDay: New day come.[0m
+[0;32mI (123783) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (123783) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (123793) ds3231_test: 📆 Epoch Time: 1742159093[0m
+[0;32mI (124793) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (124793) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:22[0m
+[0;32mI (124793) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:22[0m
+[0;32mI (124803) ds3231_isNewDay: New day come.[0m
+[0;32mI (124803) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (124803) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (124813) ds3231_test: 📆 Epoch Time: 1742159094[0m
+[0;32mI (125813) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (125813) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:23[0m
+[0;32mI (125813) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:23[0m
+[0;32mI (125823) ds3231_isNewDay: New day come.[0m
+[0;32mI (125823) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (125823) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (125833) ds3231_test: 📆 Epoch Time: 1742159095[0m
+[0;32mI (126833) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (126833) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:24[0m
+[0;32mI (126833) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:24[0m
+[0;32mI (126843) ds3231_isNewDay: New day come.[0m
+[0;32mI (126843) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (126843) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (126853) ds3231_test: 📆 Epoch Time: 1742159096[0m
+[0;32mI (127853) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (127853) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:25[0m
+[0;32mI (127853) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:25[0m
+[0;32mI (127863) ds3231_isNewDay: New day come.[0m
+[0;32mI (127863) ds3231_test: 🌞 Một ngày mới bắt đầu![0m
+[0;32mI (127863) ds3231_getEpochTime: DS3231 get EpochTime success.[0m
+[0;32mI (127873) ds3231_test: 📆 Epoch Time: 1742159097[0m

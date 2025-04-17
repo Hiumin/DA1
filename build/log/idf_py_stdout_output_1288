@@ -1,0 +1,152 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6200
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Apr  3 2025 16:28:09[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a960h ( 43360) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a988 vaddr=3ffb0000 size=02150h (  8528) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001cae0 vaddr=40080000 size=03538h ( 13624) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19fech (106476) map[0m
+[0;32mI (154) esp_image: segment 4: paddr=0003a014 vaddr=40083538 size=0a01ch ( 40988) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (187) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: Pro cpu up.[0m
+[0;32mI (188) cpu_start: Starting app cpu, entry point is 0x4008121c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) cpu_start: Application information:[0m
+[0;32mI (204) cpu_start: Project name:     test[0m
+[0;32mI (207) cpu_start: App version:      ff8af93-dirty[0m
+[0;32mI (212) cpu_start: Compile time:     Apr 17 2025 14:58:23[0m
+[0;32mI (217) cpu_start: ELF file SHA256:  f7d26e50...[0m
+[0;32mI (221) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (225) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (229) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (233) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (243) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 3FFB2A68 len 0002D598 (181 KiB): DRAM[0m
+[0;32mI (253) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (264) heap_init: At 4008D554 len 00012AAC (74 KiB): IRAM[0m
+[0;32mI (271) spi_flash: detected chip: generic[0m
+[0;32mI (273) spi_flash: flash io: dio[0m
+[0;33mW (276) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (289) app_start: Starting scheduler on CPU0[0m
+[0;32mI (292) app_start: Starting scheduler on CPU1[0m
+[0;32mI (292) main_task: Started on CPU0[0m
+[0;32mI (302) main_task: Calling app_main()[0m
+[0;32mI (302) ds3231_initialize: DS3231 module initialize success.[0m
+[0;32mI (302) main_task: Returned from app_main()[0m
+[0;32mI (302) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (312) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:45[0m
+[0;32mI (322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:45[0m
+[0;32mI (1322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (1322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:46[0m
+[0;32mI (1322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:46[0m
+[0;32mI (2322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (2322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:47[0m
+[0;32mI (2322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:47[0m
+[0;32mI (3322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (3322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:48[0m
+[0;32mI (3322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:48[0m
+[0;32mI (4322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (4322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:49[0m
+[0;32mI (4322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:49[0m
+[0;32mI (5322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:50[0m
+[0;32mI (5322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:50[0m
+[0;32mI (6322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (6322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:51[0m
+[0;32mI (6322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:51[0m
+[0;32mI (7322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (7322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:52[0m
+[0;32mI (7322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:52[0m
+[0;32mI (8322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (8322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:53[0m
+[0;32mI (8322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:53[0m
+[0;32mI (9322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (9322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:54[0m
+[0;32mI (9322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:54[0m
+[0;32mI (10322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:55[0m
+[0;32mI (10322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:55[0m
+[0;32mI (11322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (11322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:56[0m
+[0;32mI (11322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:56[0m
+[0;32mI (12322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (12322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:57[0m
+[0;32mI (12322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:57[0m
+[0;32mI (13322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (13322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:58[0m
+[0;32mI (13322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:58[0m
+[0;32mI (14322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (14322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:17:59[0m
+[0;32mI (14322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:17:59[0m
+[0;32mI (15322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (15322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:0[0m
+[0;32mI (15322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:0[0m
+[0;32mI (16322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (16322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:1[0m
+[0;32mI (16322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:1[0m
+[0;32mI (17322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (17322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:2[0m
+[0;32mI (17322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:2[0m
+[0;32mI (18322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (18322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:3[0m
+[0;32mI (18322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:3[0m
+[0;32mI (19322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (19322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:4[0m
+[0;32mI (19322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:4[0m
+[0;32mI (20322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (20322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:5[0m
+[0;32mI (20322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:5[0m
+[0;32mI (21322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (21322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:6[0m
+[0;32mI (21322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:6[0m
+[0;32mI (22322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (22322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:7[0m
+[0;32mI (22322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:7[0m
+[0;32mI (23322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (23322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:8[0m
+[0;32mI (23322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:8[0m
+[0;32mI (24322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (24322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:9[0m
+[0;32mI (24322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:9[0m
+[0;32mI (25322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (25322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:10[0m
+[0;32mI (25322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:10[0m
+[0;32mI (26322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (26322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:11[0m
+[0;32mI (26322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:11[0m
+[0;32mI (27322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (27322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:12[0m
+[0;32mI (27322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:12[0m
+[0;32mI (28322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (28322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:13[0m
+[0;32mI (28322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:13[0m
+[0;32mI (29322) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (29322) ds3231_convertTimeToString: Current date & time: 17-3-2025 15:18:14[0m
+[0;32mI (29322) ds3231_test: ⏰ Thời gian hiện tại: 17-3-2025 15:18:14[0m

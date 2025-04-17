@@ -675,6 +675,13 @@ D:/Hiep/lab/DA1/build/esp-idf/DS3231/CMakeFiles/list_install_components.dir
 D:/Hiep/lab/DA1/build/esp-idf/DS3231/CMakeFiles/install.dir
 D:/Hiep/lab/DA1/build/esp-idf/DS3231/CMakeFiles/install/local.dir
 D:/Hiep/lab/DA1/build/esp-idf/DS3231/CMakeFiles/install/strip.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/__idf_Time.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/edit_cache.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/rebuild_cache.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/list_install_components.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/install.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/install/local.dir
+D:/Hiep/lab/DA1/build/esp-idf/Time/CMakeFiles/install/strip.dir
 D:/Hiep/lab/DA1/build/esp-idf/main/CMakeFiles/__idf_main.dir
 D:/Hiep/lab/DA1/build/esp-idf/main/CMakeFiles/edit_cache.dir
 D:/Hiep/lab/DA1/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

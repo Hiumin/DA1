@@ -4801,6 +4801,54 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "GPIO number for I2C Master clock line.",
+                "id": "RTC_PIN_NUM_SCL",
+                "name": "RTC_PIN_NUM_SCL",
+                "range": null,
+                "title": "SCL GPIO Number",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "GPIO number for I2C Master data line.",
+                "id": "RTC_PIN_NUM_SDA",
+                "name": "RTC_PIN_NUM_SDA",
+                "range": null,
+                "title": "SDA GPIO Number",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "I2C port for RTC module.",
+                "id": "RTC_I2C_PORT",
+                "name": "RTC_I2C_PORT",
+                "range": null,
+                "title": "I2C Port",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "I2C frequency.",
+                "id": "RTC_I2C_FREQ_HZ",
+                "name": "RTC_I2C_FREQ_HZ",
+                "range": null,
+                "title": "Frequency I2C",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "rtc-configuration",
+        "title": "RTC configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],
