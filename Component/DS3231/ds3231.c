@@ -399,7 +399,7 @@ esp_err_t ds3231_get_time(i2c_dev_t *dev, struct tm *time)
         time->tm_hour = bcd2dec(data[2]); /* 24H */
     time->tm_wday = bcd2dec(data[3]) - 1;
     time->tm_mday = bcd2dec(data[4]);
-    time->tm_mon = bcd2dec(data[5] & DS3231_MONTH_MASK) - 1;
+    time->tm_mon = bcd2dec(data[5] & DS3231_MONTH_MASK);
     time->tm_year = bcd2dec(data[6]) + 2000;
     time->tm_isdst = 0;
 

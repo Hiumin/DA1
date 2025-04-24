@@ -2,6 +2,9 @@
 #include "pms7003.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include <ds3231.h>
+#include <string.h>
+#include "DS3231Time.h"
 
 #define PMS_UART_PORT UART_NUM_2  // Cổng UART sử dụng
 #define PMS_PIN_TX (GPIO_NUM_17)  // Chân TX của ESP32

@@ -34,6 +34,7 @@ extern void ds3231_test(void *pvParameters);
 void app_main(void)
 {
     init_sdcard();
+
     write_file("test", "abc");
     read_file("test");
     // rename_file("test", "test1");

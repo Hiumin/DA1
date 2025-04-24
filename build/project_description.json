@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "test",
-    "project_version":    "c5f6b79-dirty",
+    "project_version":    "f246f05-dirty",
     "project_path":       "D:/Hiep/lab/DA1",
     "idf_path":           "D:/Hiep/esp32/Espressif/v5.1.6/esp-idf",
     "build_dir":          "D:/Hiep/lab/DA1/build",
