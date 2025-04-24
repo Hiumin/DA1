@@ -1,1 +1,0 @@
-ninja: error: 'D:/Hiep/lab/DA1/main/pms7003_test.c', needed by 'esp-idf/main/CMakeFiles/__idf_main.dir/pms7003_test.c.obj', missing and no known rule to make it

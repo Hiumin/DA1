@@ -1,0 +1,1929 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM10'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 24 2025 16:21:10[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bfd4h ( 49108) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bffc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001c020 vaddr=3ffb0000 size=023cch (  9164) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001e3f4 vaddr=40080000 size=01c24h (  7204) load[0m
+[0;32mI (119) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1bb5ch (113500) map[0m
+[0;32mI (163) esp_image: segment 5: paddr=0003bb84 vaddr=40081c24 size=0c994h ( 51604) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     test[0m
+[0;32mI (213) app_init: App version:      6fe6831-dirty[0m
+[0;32mI (217) app_init: Compile time:     Apr 24 2025 16:20:51[0m
+[0;32mI (222) app_init: ELF file SHA256:  742953fa3...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (233) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (236) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+I (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+[0;32mI (256) heap_init: At 3FFB2D18 len 0002D2E8 (180 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 4008E5B8 len 00011A48 (70 KiB): IRAM[0m
+[0;32mI (278) spi_flash: detected chip: generic[0m
+[0;32mI (281) spi_flash: flash io: dio[0m
+[0;33mW (284) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (296) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (316) ds3231_initialize: DS3231 module initialize success.[0m
+[0;32mI (316) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (316) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (316) main_task: Returned from app_main()[0m
+[0;32mI (326) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:47[0m
+[0;32mI (336) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:47[0m
+[0;32mI (1316) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (1336) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (1336) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:48[0m
+[0;32mI (1336) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:48[0m
+[0;32mI (2316) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (2336) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (2336) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:49[0m
+[0;32mI (2336) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:49[0m
+[0;32mI (3316) mhz14a_initUART: MHZ14A initialize success.[0m
+[1;31mE (3316) uart: uart_param_config(867): param null[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d8886
+file: "./Component/MH_Z14A/mhz14a.c" line 207
+func: mhz14a_initUART
+expression: error_2
+[1;31mE (3326) mhz14a_initUART: MHZ14A UART port initialize failed. (0x0 0xffffffff 0x0)[0m
+[1;31mE (3336) MH_Z14A: Loi khi khoi tao UART cho MHZ14a.[0m
+[0;32mI (3336) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (3336) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (3346) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:50[0m
+[0;32mI (3356) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:50[0m
+[1;31mE (3646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (3646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (4366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (4366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:51[0m
+[0;32mI (4366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:51[0m
+[0;32mI (5366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:52[0m
+[0;32mI (5366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:52[0m
+[0;32mI (6366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (6366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:53[0m
+[0;32mI (6366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:53[0m
+[0;32mI (7366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (7366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:54[0m
+[0;32mI (7366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:54[0m
+[0;32mI (8366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (8366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:55[0m
+[0;32mI (8366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:55[0m
+[0;32mI (8646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (8946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (8946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (9366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (9366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:56[0m
+[0;32mI (9366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:56[0m
+[0;32mI (10366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:57[0m
+[0;32mI (10366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:57[0m
+[0;32mI (11366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (11366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:58[0m
+[0;32mI (11366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:58[0m
+[0;32mI (12366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (12366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:23:59[0m
+[0;32mI (12366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:23:59[0m
+[0;32mI (13366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (13366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:0[0m
+[0;32mI (13366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:0[0m
+[0;32mI (13946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (14246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (14246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (14366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (14366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:1[0m
+[0;32mI (14366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:1[0m
+[0;32mI (15366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (15366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:2[0m
+[0;32mI (15366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:2[0m
+[0;32mI (16366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (16366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:3[0m
+[0;32mI (16366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:3[0m
+[0;32mI (17366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (17366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:4[0m
+[0;32mI (17366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:4[0m
+[0;32mI (18366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (18366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:5[0m
+[0;32mI (18366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:5[0m
+[0;32mI (19246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (19366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (19366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:6[0m
+[0;32mI (19366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:6[0m
+[1;31mE (19546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (19546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (20366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (20366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:7[0m
+[0;32mI (20366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:7[0m
+[0;32mI (21366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (21366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:8[0m
+[0;32mI (21366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:8[0m
+[0;32mI (22366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (22366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:9[0m
+[0;32mI (22366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:9[0m
+[0;32mI (23366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (23366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:10[0m
+[0;32mI (23366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:10[0m
+[0;32mI (24366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (24366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:11[0m
+[0;32mI (24366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:11[0m
+[0;32mI (24546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (24846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (24846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (25366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (25366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:12[0m
+[0;32mI (25366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:12[0m
+[0;32mI (26366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (26366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:13[0m
+[0;32mI (26366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:13[0m
+[0;32mI (27366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (27366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:14[0m
+[0;32mI (27366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:14[0m
+[0;32mI (28366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (28366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:15[0m
+[0;32mI (28366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:15[0m
+[0;32mI (29366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (29366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:16[0m
+[0;32mI (29366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:16[0m
+[0;32mI (29846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (30146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (30146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (30366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (30366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:17[0m
+[0;32mI (30366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:17[0m
+[0;32mI (31366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (31366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:18[0m
+[0;32mI (31366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:18[0m
+[0;32mI (32366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (32366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:19[0m
+[0;32mI (32366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:19[0m
+[0;32mI (33366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (33366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:20[0m
+[0;32mI (33366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:20[0m
+[0;32mI (34366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (34366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:21[0m
+[0;32mI (34366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:21[0m
+[0;32mI (35146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (35366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (35366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:22[0m
+[0;32mI (35366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:22[0m
+[1;31mE (35446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (35446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (36366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (36366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:23[0m
+[0;32mI (36366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:23[0m
+[0;32mI (37366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (37366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:24[0m
+[0;32mI (37366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:24[0m
+[0;32mI (38366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (38366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:25[0m
+[0;32mI (38366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:25[0m
+[0;32mI (39366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (39366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:26[0m
+[0;32mI (39366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:26[0m
+[0;32mI (40366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (40366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:27[0m
+[0;32mI (40366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:27[0m
+[0;32mI (40446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (40746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (40746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (41366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (41366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:28[0m
+[0;32mI (41366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:28[0m
+[0;32mI (42366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (42366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:29[0m
+[0;32mI (42366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:29[0m
+[0;32mI (43366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (43366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:30[0m
+[0;32mI (43366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:30[0m
+[0;32mI (44366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (44366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:31[0m
+[0;32mI (44366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:31[0m
+[0;32mI (45366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (45366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:32[0m
+[0;32mI (45366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:32[0m
+[0;32mI (45746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (46046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (46046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (46366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (46366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:33[0m
+[0;32mI (46366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:33[0m
+[0;32mI (47366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (47366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:34[0m
+[0;32mI (47366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:34[0m
+[0;32mI (48366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (48366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:35[0m
+[0;32mI (48366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:35[0m
+[0;32mI (49366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (49366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:36[0m
+[0;32mI (49366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:36[0m
+[0;32mI (50366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (50366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:37[0m
+[0;32mI (50366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:37[0m
+[0;32mI (51046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (51346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (51346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (51366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (51366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:38[0m
+[0;32mI (51366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:38[0m
+[0;32mI (52366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (52366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:39[0m
+[0;32mI (52366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:39[0m
+[0;32mI (53366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (53366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:40[0m
+[0;32mI (53366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:40[0m
+[0;32mI (54366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (54366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:41[0m
+[0;32mI (54366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:41[0m
+[0;32mI (55366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (55366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:42[0m
+[0;32mI (55366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:42[0m
+[0;32mI (56346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (56366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (56366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:43[0m
+[0;32mI (56366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:43[0m
+[1;31mE (56646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (56646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (57366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (57366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:44[0m
+[0;32mI (57366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:44[0m
+[0;32mI (58366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (58366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:45[0m
+[0;32mI (58366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:45[0m
+[0;32mI (59366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (59366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:46[0m
+[0;32mI (59366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:46[0m
+[0;32mI (60366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (60366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:47[0m
+[0;32mI (60366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:47[0m
+[0;32mI (61366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (61366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:48[0m
+[0;32mI (61366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:48[0m
+[0;32mI (61646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (61946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (61946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (62366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (62366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:49[0m
+[0;32mI (62366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:49[0m
+[0;32mI (63366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (63366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:50[0m
+[0;32mI (63366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:50[0m
+[0;32mI (64366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (64366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:51[0m
+[0;32mI (64366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:51[0m
+[0;32mI (65366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (65366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:52[0m
+[0;32mI (65366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:52[0m
+[0;32mI (66366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (66366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:53[0m
+[0;32mI (66366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:53[0m
+[0;32mI (66946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (67246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (67246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (67366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (67366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:54[0m
+[0;32mI (67366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:54[0m
+[0;32mI (68366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (68366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:55[0m
+[0;32mI (68366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:55[0m
+[0;32mI (69366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (69366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:56[0m
+[0;32mI (69366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:56[0m
+[0;32mI (70366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (70366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:57[0m
+[0;32mI (70366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:57[0m
+[0;32mI (71366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (71366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:58[0m
+[0;32mI (71366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:58[0m
+[0;32mI (72246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (72366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (72366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:24:59[0m
+[0;32mI (72366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:24:59[0m
+[1;31mE (72546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (72546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (73366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (73366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:0[0m
+[0;32mI (73366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:0[0m
+[0;32mI (74366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (74366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:1[0m
+[0;32mI (74366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:1[0m
+[0;32mI (75366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (75366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:2[0m
+[0;32mI (75366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:2[0m
+[0;32mI (76366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (76366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:3[0m
+[0;32mI (76366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:3[0m
+[0;32mI (77366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (77366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:4[0m
+[0;32mI (77366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:4[0m
+[0;32mI (77546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (77846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (77846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (78366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (78366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:5[0m
+[0;32mI (78366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:5[0m
+[0;32mI (79366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (79366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:6[0m
+[0;32mI (79366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:6[0m
+[0;32mI (80366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (80366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:7[0m
+[0;32mI (80366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:7[0m
+[0;32mI (81366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (81366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:8[0m
+[0;32mI (81366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:8[0m
+[0;32mI (82366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (82366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:9[0m
+[0;32mI (82366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:9[0m
+[0;32mI (82846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (83146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (83146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (83366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (83366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:10[0m
+[0;32mI (83366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:10[0m
+[0;32mI (84366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (84366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:11[0m
+[0;32mI (84366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:11[0m
+[0;32mI (85366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (85366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:12[0m
+[0;32mI (85366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:12[0m
+[0;32mI (86366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (86366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:13[0m
+[0;32mI (86366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:13[0m
+[0;32mI (87366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (87366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:14[0m
+[0;32mI (87366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:14[0m
+[0;32mI (88146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (88366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (88366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:15[0m
+[0;32mI (88366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:15[0m
+[1;31mE (88446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (88446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (89366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (89366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:16[0m
+[0;32mI (89366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:16[0m
+[0;32mI (90366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (90366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:17[0m
+[0;32mI (90366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:17[0m
+[0;32mI (91366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (91366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:18[0m
+[0;32mI (91366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:18[0m
+[0;32mI (92366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (92366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:19[0m
+[0;32mI (92366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:19[0m
+[0;32mI (93366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (93366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:20[0m
+[0;32mI (93366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:20[0m
+[0;32mI (93446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (93746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (93746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (94366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (94366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:21[0m
+[0;32mI (94366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:21[0m
+[0;32mI (95366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (95366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:22[0m
+[0;32mI (95366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:22[0m
+[0;32mI (96366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (96366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:23[0m
+[0;32mI (96366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:23[0m
+[0;32mI (97366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (97366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:24[0m
+[0;32mI (97366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:24[0m
+[0;32mI (98366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (98366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:25[0m
+[0;32mI (98366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:25[0m
+[0;32mI (98746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (99046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (99046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (99366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (99366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:26[0m
+[0;32mI (99366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:26[0m
+[0;32mI (100366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (100366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:27[0m
+[0;32mI (100366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:27[0m
+[0;32mI (101366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (101366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:28[0m
+[0;32mI (101366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:28[0m
+[0;32mI (102366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (102366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:29[0m
+[0;32mI (102366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:29[0m
+[0;32mI (103366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (103366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:30[0m
+[0;32mI (103366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:30[0m
+[0;32mI (104046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (104346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (104346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (104366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (104366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:31[0m
+[0;32mI (104366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:31[0m
+[0;32mI (105366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (105366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:32[0m
+[0;32mI (105366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:32[0m
+[0;32mI (106366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (106366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:33[0m
+[0;32mI (106366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:33[0m
+[0;32mI (107366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (107366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:34[0m
+[0;32mI (107366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:34[0m
+[0;32mI (108366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (108366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:35[0m
+[0;32mI (108366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:35[0m
+[0;32mI (109346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (109366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (109366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:36[0m
+[0;32mI (109366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:36[0m
+[1;31mE (109646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (109646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (110366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (110366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:37[0m
+[0;32mI (110366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:37[0m
+[0;32mI (111366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (111366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:38[0m
+[0;32mI (111366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:38[0m
+[0;32mI (112366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (112366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:39[0m
+[0;32mI (112366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:39[0m
+[0;32mI (113366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (113366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:40[0m
+[0;32mI (113366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:40[0m
+[0;32mI (114366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (114366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:41[0m
+[0;32mI (114366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:41[0m
+[0;32mI (114646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (114946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (114946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (115366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (115366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:42[0m
+[0;32mI (115366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:42[0m
+[0;32mI (116366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (116366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:43[0m
+[0;32mI (116366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:43[0m
+[0;32mI (117366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (117366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:44[0m
+[0;32mI (117366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:44[0m
+[0;32mI (118366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (118366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:45[0m
+[0;32mI (118366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:45[0m
+[0;32mI (119366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (119366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:46[0m
+[0;32mI (119366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:46[0m
+[0;32mI (119946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (120246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (120246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (120366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (120366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:47[0m
+[0;32mI (120366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:47[0m
+[0;32mI (121366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (121366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:48[0m
+[0;32mI (121366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:48[0m
+[0;32mI (122366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (122366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:49[0m
+[0;32mI (122366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:49[0m
+[0;32mI (123366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (123366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:50[0m
+[0;32mI (123366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:50[0m
+[0;32mI (124366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (124366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:51[0m
+[0;32mI (124366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:51[0m
+[0;32mI (125246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (125366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (125366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:52[0m
+[0;32mI (125366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:52[0m
+[1;31mE (125546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (125546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (126366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (126366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:53[0m
+[0;32mI (126366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:53[0m
+[0;32mI (127366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (127366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:54[0m
+[0;32mI (127366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:54[0m
+[0;32mI (128366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (128366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:55[0m
+[0;32mI (128366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:55[0m
+[0;32mI (129366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (129366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:56[0m
+[0;32mI (129366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:56[0m
+[0;32mI (130366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (130366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:57[0m
+[0;32mI (130366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:57[0m
+[0;32mI (130546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (130846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (130846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (131366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (131366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:58[0m
+[0;32mI (131366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:58[0m
+[0;32mI (132366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (132366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:25:59[0m
+[0;32mI (132366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:25:59[0m
+[0;32mI (133366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (133366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:0[0m
+[0;32mI (133366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:0[0m
+[0;32mI (134366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (134366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:1[0m
+[0;32mI (134366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:1[0m
+[0;32mI (135366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (135366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:2[0m
+[0;32mI (135366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:2[0m
+[0;32mI (135846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (136146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (136146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (136366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (136366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:3[0m
+[0;32mI (136366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:3[0m
+[0;32mI (137366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (137366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:4[0m
+[0;32mI (137366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:4[0m
+[0;32mI (138366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (138366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:5[0m
+[0;32mI (138366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:5[0m
+[0;32mI (139366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (139366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:6[0m
+[0;32mI (139366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:6[0m
+[0;32mI (140366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (140366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:7[0m
+[0;32mI (140366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:7[0m
+[0;32mI (141146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (141366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (141366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:8[0m
+[0;32mI (141366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:8[0m
+[1;31mE (141446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (141446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (142366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (142366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:9[0m
+[0;32mI (142366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:9[0m
+[0;32mI (143366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (143366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:10[0m
+[0;32mI (143366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:10[0m
+[0;32mI (144366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (144366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:11[0m
+[0;32mI (144366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:11[0m
+[0;32mI (145366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (145366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:12[0m
+[0;32mI (145366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:12[0m
+[0;32mI (146366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (146366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:13[0m
+[0;32mI (146366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:13[0m
+[0;32mI (146446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (146746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (146746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (147366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (147366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:14[0m
+[0;32mI (147366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:14[0m
+[0;32mI (148366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (148366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:15[0m
+[0;32mI (148366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:15[0m
+[0;32mI (149366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (149366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:16[0m
+[0;32mI (149366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:16[0m
+[0;32mI (150366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (150366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:17[0m
+[0;32mI (150366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:17[0m
+[0;32mI (151366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (151366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:18[0m
+[0;32mI (151366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:18[0m
+[0;32mI (151746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (152046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (152046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (152366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (152366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:19[0m
+[0;32mI (152366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:19[0m
+[0;32mI (153366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (153366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:20[0m
+[0;32mI (153366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:20[0m
+[0;32mI (154366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (154366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:21[0m
+[0;32mI (154366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:21[0m
+[0;32mI (155366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (155366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:22[0m
+[0;32mI (155366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:22[0m
+[0;32mI (156366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (156366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:23[0m
+[0;32mI (156366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:23[0m
+[0;32mI (157046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (157346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (157346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (157366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (157366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:24[0m
+[0;32mI (157366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:24[0m
+[0;32mI (158366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (158366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:25[0m
+[0;32mI (158366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:25[0m
+[0;32mI (159366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (159366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:26[0m
+[0;32mI (159366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:26[0m
+[0;32mI (160366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (160366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:27[0m
+[0;32mI (160366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:27[0m
+[0;32mI (161366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (161366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:28[0m
+[0;32mI (161366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:28[0m
+[0;32mI (162346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (162366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (162366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:29[0m
+[0;32mI (162366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:29[0m
+[1;31mE (162646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (162646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (163366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (163366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:30[0m
+[0;32mI (163366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:30[0m
+[0;32mI (164366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (164366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:31[0m
+[0;32mI (164366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:31[0m
+[0;32mI (165366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (165366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:32[0m
+[0;32mI (165366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:32[0m
+[0;32mI (166366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (166366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:33[0m
+[0;32mI (166366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:33[0m
+[0;32mI (167366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (167366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:34[0m
+[0;32mI (167366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:34[0m
+[0;32mI (167646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (167946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (167946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (168366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (168366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:35[0m
+[0;32mI (168366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:35[0m
+[0;32mI (169366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (169366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:36[0m
+[0;32mI (169366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:36[0m
+[0;32mI (170366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (170366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:37[0m
+[0;32mI (170366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:37[0m
+[0;32mI (171366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (171366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:38[0m
+[0;32mI (171366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:38[0m
+[0;32mI (172366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (172366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:39[0m
+[0;32mI (172366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:39[0m
+[0;32mI (172946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (173246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (173246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (173366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (173366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:40[0m
+[0;32mI (173366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:40[0m
+[0;32mI (174366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (174366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:41[0m
+[0;32mI (174366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:41[0m
+[0;32mI (175366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (175366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:42[0m
+[0;32mI (175366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:42[0m
+[0;32mI (176366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (176366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:43[0m
+[0;32mI (176366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:43[0m
+[0;32mI (177366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (177366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:44[0m
+[0;32mI (177366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:44[0m
+[0;32mI (178246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (178366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (178366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:45[0m
+[0;32mI (178366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:45[0m
+[1;31mE (178546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (178546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (179366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (179366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:46[0m
+[0;32mI (179366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:46[0m
+[0;32mI (180366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (180366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:47[0m
+[0;32mI (180366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:47[0m
+[0;32mI (181366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (181366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:48[0m
+[0;32mI (181366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:48[0m
+[0;32mI (182366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (182366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:49[0m
+[0;32mI (182366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:49[0m
+[0;32mI (183366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (183366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:50[0m
+[0;32mI (183366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:50[0m
+[0;32mI (183546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (183846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (183846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (184366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (184366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:51[0m
+[0;32mI (184366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:51[0m
+[0;32mI (185366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (185366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:52[0m
+[0;32mI (185366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:52[0m
+[0;32mI (186366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (186366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:53[0m
+[0;32mI (186366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:53[0m
+[0;32mI (187366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (187366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:54[0m
+[0;32mI (187366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:54[0m
+[0;32mI (188366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (188366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:55[0m
+[0;32mI (188366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:55[0m
+[0;32mI (188846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (189146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (189146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (189366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (189366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:56[0m
+[0;32mI (189366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:56[0m
+[0;32mI (190366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (190366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:57[0m
+[0;32mI (190366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:57[0m
+[0;32mI (191366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (191366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:58[0m
+[0;32mI (191366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:58[0m
+[0;32mI (192366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (192366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:26:59[0m
+[0;32mI (192366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:26:59[0m
+[0;32mI (193366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (193366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:0[0m
+[0;32mI (193366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:0[0m
+[0;32mI (194146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (194366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (194366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:1[0m
+[0;32mI (194366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:1[0m
+[1;31mE (194446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (194446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (195366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (195366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:2[0m
+[0;32mI (195366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:2[0m
+[0;32mI (196366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (196366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:3[0m
+[0;32mI (196366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:3[0m
+[0;32mI (197366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (197366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:4[0m
+[0;32mI (197366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:4[0m
+[0;32mI (198366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (198366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:5[0m
+[0;32mI (198366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:5[0m
+[0;32mI (199366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (199366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:6[0m
+[0;32mI (199366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:6[0m
+[0;32mI (199446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (199746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (199746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (200366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (200366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:7[0m
+[0;32mI (200366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:7[0m
+[0;32mI (201366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (201366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:8[0m
+[0;32mI (201366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:8[0m
+[0;32mI (202366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (202366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:9[0m
+[0;32mI (202366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:9[0m
+[0;32mI (203366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (203366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:10[0m
+[0;32mI (203366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:10[0m
+[0;32mI (204366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (204366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:11[0m
+[0;32mI (204366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:11[0m
+[0;32mI (204746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (205046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (205046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (205366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (205366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:12[0m
+[0;32mI (205366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:12[0m
+[0;32mI (206366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (206366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:13[0m
+[0;32mI (206366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:13[0m
+[0;32mI (207366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (207366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:14[0m
+[0;32mI (207366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:14[0m
+[0;32mI (208366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (208366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:15[0m
+[0;32mI (208366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:15[0m
+[0;32mI (209366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (209366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:16[0m
+[0;32mI (209366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:16[0m
+[0;32mI (210046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (210346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (210346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (210366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (210366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:17[0m
+[0;32mI (210366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:17[0m
+[0;32mI (211366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (211366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:18[0m
+[0;32mI (211366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:18[0m
+[0;32mI (212366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (212366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:19[0m
+[0;32mI (212366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:19[0m
+[0;32mI (213366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (213366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:20[0m
+[0;32mI (213366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:20[0m
+[0;32mI (214366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (214366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:21[0m
+[0;32mI (214366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:21[0m
+[0;32mI (215346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (215366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (215366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:22[0m
+[0;32mI (215366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:22[0m
+[1;31mE (215646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (215646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (216366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (216366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:23[0m
+[0;32mI (216366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:23[0m
+[0;32mI (217366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (217366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:24[0m
+[0;32mI (217366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:24[0m
+[0;32mI (218366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (218366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:25[0m
+[0;32mI (218366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:25[0m
+[0;32mI (219366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (219366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:26[0m
+[0;32mI (219366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:26[0m
+[0;32mI (220366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (220366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:27[0m
+[0;32mI (220366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:27[0m
+[0;32mI (220646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (220946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (220946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (221366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (221366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:28[0m
+[0;32mI (221366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:28[0m
+[0;32mI (222366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (222366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:29[0m
+[0;32mI (222366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:29[0m
+[0;32mI (223366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (223366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:30[0m
+[0;32mI (223366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:30[0m
+[0;32mI (224366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (224366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:31[0m
+[0;32mI (224366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:31[0m
+[0;32mI (225366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (225366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:32[0m
+[0;32mI (225366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:32[0m
+[0;32mI (225946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (226246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (226246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (226366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (226366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:33[0m
+[0;32mI (226366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:33[0m
+[0;32mI (227366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (227366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:34[0m
+[0;32mI (227366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:34[0m
+[0;32mI (228366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (228366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:35[0m
+[0;32mI (228366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:35[0m
+[0;32mI (229366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (229366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:36[0m
+[0;32mI (229366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:36[0m
+[0;32mI (230366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (230366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:37[0m
+[0;32mI (230366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:37[0m
+[0;32mI (231246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (231366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (231366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:38[0m
+[0;32mI (231366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:38[0m
+[1;31mE (231546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (231546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (232366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (232366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:39[0m
+[0;32mI (232366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:39[0m
+[0;32mI (233366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (233366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:40[0m
+[0;32mI (233366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:40[0m
+[0;32mI (234366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (234366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:41[0m
+[0;32mI (234366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:41[0m
+[0;32mI (235366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (235366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:42[0m
+[0;32mI (235366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:42[0m
+[0;32mI (236366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (236366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:43[0m
+[0;32mI (236366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:43[0m
+[0;32mI (236546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (236846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (236846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (237366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (237366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:44[0m
+[0;32mI (237366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:44[0m
+[0;32mI (238366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (238366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:45[0m
+[0;32mI (238366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:45[0m
+[0;32mI (239366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (239366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:46[0m
+[0;32mI (239366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:46[0m
+[0;32mI (240366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (240366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:47[0m
+[0;32mI (240366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:47[0m
+[0;32mI (241366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (241366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:48[0m
+[0;32mI (241366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:48[0m
+[0;32mI (241846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (242146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (242146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (242366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (242366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:49[0m
+[0;32mI (242366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:49[0m
+[0;32mI (243366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (243366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:50[0m
+[0;32mI (243366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:50[0m
+[0;32mI (244366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (244366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:51[0m
+[0;32mI (244366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:51[0m
+[0;32mI (245366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (245366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:52[0m
+[0;32mI (245366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:52[0m
+[0;32mI (246366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (246366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:53[0m
+[0;32mI (246366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:53[0m
+[0;32mI (247146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (247366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (247366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:54[0m
+[0;32mI (247366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:54[0m
+[1;31mE (247446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (247446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (248366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (248366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:55[0m
+[0;32mI (248366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:55[0m
+[0;32mI (249366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (249366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:56[0m
+[0;32mI (249366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:56[0m
+[0;32mI (250366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (250366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:57[0m
+[0;32mI (250366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:57[0m
+[0;32mI (251366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (251366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:58[0m
+[0;32mI (251366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:58[0m
+[0;32mI (252366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (252366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:27:59[0m
+[0;32mI (252366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:27:59[0m
+[0;32mI (252446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (252746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (252746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (253366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (253366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:0[0m
+[0;32mI (253366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:0[0m
+[0;32mI (254366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (254366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:1[0m
+[0;32mI (254366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:1[0m
+[0;32mI (255366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (255366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:2[0m
+[0;32mI (255366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:2[0m
+[0;32mI (256366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (256366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:3[0m
+[0;32mI (256366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:3[0m
+[0;32mI (257366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (257366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:4[0m
+[0;32mI (257366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:4[0m
+[0;32mI (257746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (258046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (258046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (258366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (258366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:5[0m
+[0;32mI (258366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:5[0m
+[0;32mI (259366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (259366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:6[0m
+[0;32mI (259366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:6[0m
+[0;32mI (260366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (260366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:7[0m
+[0;32mI (260366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:7[0m
+[0;32mI (261366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (261366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:8[0m
+[0;32mI (261366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:8[0m
+[0;32mI (262366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (262366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:9[0m
+[0;32mI (262366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:9[0m
+[0;32mI (263046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (263346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (263346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (263366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (263366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:10[0m
+[0;32mI (263366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:10[0m
+[0;32mI (264366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (264366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:11[0m
+[0;32mI (264366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:11[0m
+[0;32mI (265366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (265366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:12[0m
+[0;32mI (265366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:12[0m
+[0;32mI (266366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (266366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:13[0m
+[0;32mI (266366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:13[0m
+[0;32mI (267366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (267366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:14[0m
+[0;32mI (267366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:14[0m
+[0;32mI (268346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (268366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (268366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:15[0m
+[0;32mI (268366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:15[0m
+[1;31mE (268646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (268646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (269366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (269366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:16[0m
+[0;32mI (269366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:16[0m
+[0;32mI (270366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (270366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:17[0m
+[0;32mI (270366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:17[0m
+[0;32mI (271366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (271366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:18[0m
+[0;32mI (271366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:18[0m
+[0;32mI (272366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (272366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:19[0m
+[0;32mI (272366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:19[0m
+[0;32mI (273366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (273366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:20[0m
+[0;32mI (273366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:20[0m
+[0;32mI (273646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (273946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (273946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (274366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (274366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:21[0m
+[0;32mI (274366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:21[0m
+[0;32mI (275366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (275366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:22[0m
+[0;32mI (275366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:22[0m
+[0;32mI (276366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (276366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:23[0m
+[0;32mI (276366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:23[0m
+[0;32mI (277366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (277366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:24[0m
+[0;32mI (277366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:24[0m
+[0;32mI (278366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (278366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:25[0m
+[0;32mI (278366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:25[0m
+[0;32mI (278946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (279246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (279246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (279366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (279366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:26[0m
+[0;32mI (279366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:26[0m
+[0;32mI (280366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (280366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:27[0m
+[0;32mI (280366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:27[0m
+[0;32mI (281366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (281366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:28[0m
+[0;32mI (281366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:28[0m
+[0;32mI (282366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (282366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:29[0m
+[0;32mI (282366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:29[0m
+[0;32mI (283366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (283366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:30[0m
+[0;32mI (283366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:30[0m
+[0;32mI (284246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (284366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (284366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:31[0m
+[0;32mI (284366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:31[0m
+[1;31mE (284546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (284546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (285366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (285366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:32[0m
+[0;32mI (285366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:32[0m
+[0;32mI (286366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (286366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:33[0m
+[0;32mI (286366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:33[0m
+[0;32mI (287366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (287366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:34[0m
+[0;32mI (287366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:34[0m
+[0;32mI (288366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (288366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:35[0m
+[0;32mI (288366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:35[0m
+[0;32mI (289366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (289366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:36[0m
+[0;32mI (289366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:36[0m
+[0;32mI (289546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (289846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (289846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (290366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (290366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:37[0m
+[0;32mI (290366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:37[0m
+[0;32mI (291366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (291366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:38[0m
+[0;32mI (291366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:38[0m
+[0;32mI (292366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (292366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:39[0m
+[0;32mI (292366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:39[0m
+[0;32mI (293366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (293366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:40[0m
+[0;32mI (293366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:40[0m
+[0;32mI (294366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (294366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:41[0m
+[0;32mI (294366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:41[0m
+[0;32mI (294846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (295146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (295146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (295366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (295366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:42[0m
+[0;32mI (295366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:42[0m
+[0;32mI (296366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (296366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:43[0m
+[0;32mI (296366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:43[0m
+[0;32mI (297366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (297366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:44[0m
+[0;32mI (297366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:44[0m
+[0;32mI (298366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (298366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:45[0m
+[0;32mI (298366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:45[0m
+[0;32mI (299366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (299366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:46[0m
+[0;32mI (299366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:46[0m
+[0;32mI (300146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (300366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (300366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:47[0m
+[0;32mI (300366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:47[0m
+[1;31mE (300446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (300446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (301366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (301366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:48[0m
+[0;32mI (301366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:48[0m
+[0;32mI (302366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (302366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:49[0m
+[0;32mI (302366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:49[0m
+[0;32mI (303366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (303366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:50[0m
+[0;32mI (303366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:50[0m
+[0;32mI (304366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (304366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:51[0m
+[0;32mI (304366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:51[0m
+[0;32mI (305366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (305366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:52[0m
+[0;32mI (305366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:52[0m
+[0;32mI (305446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (305746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (305746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (306366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (306366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:53[0m
+[0;32mI (306366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:53[0m
+[0;32mI (307366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (307366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:54[0m
+[0;32mI (307366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:54[0m
+[0;32mI (308366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (308366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:55[0m
+[0;32mI (308366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:55[0m
+[0;32mI (309366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (309366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:56[0m
+[0;32mI (309366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:56[0m
+[0;32mI (310366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (310366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:57[0m
+[0;32mI (310366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:57[0m
+[0;32mI (310746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (311046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (311046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (311366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (311366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:58[0m
+[0;32mI (311366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:58[0m
+[0;32mI (312366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (312366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:28:59[0m
+[0;32mI (312366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:28:59[0m
+[0;32mI (313366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (313366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:0[0m
+[0;32mI (313366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:0[0m
+[0;32mI (314366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (314366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:1[0m
+[0;32mI (314366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:1[0m
+[0;32mI (315366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (315366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:2[0m
+[0;32mI (315366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:2[0m
+[0;32mI (316046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (316346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (316346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (316366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (316366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:3[0m
+[0;32mI (316366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:3[0m
+[0;32mI (317366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (317366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:4[0m
+[0;32mI (317366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:4[0m
+[0;32mI (318366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (318366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:5[0m
+[0;32mI (318366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:5[0m
+[0;32mI (319366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (319366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:6[0m
+[0;32mI (319366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:6[0m
+[0;32mI (320366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (320366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:7[0m
+[0;32mI (320366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:7[0m
+[0;32mI (321346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (321366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (321366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:8[0m
+[0;32mI (321366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:8[0m
+[1;31mE (321646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (321646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (322366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (322366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:9[0m
+[0;32mI (322366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:9[0m
+[0;32mI (323366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (323366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:10[0m
+[0;32mI (323366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:10[0m
+[0;32mI (324366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (324366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:11[0m
+[0;32mI (324366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:11[0m
+[0;32mI (325366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (325366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:12[0m
+[0;32mI (325366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:12[0m
+[0;32mI (326366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (326366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:13[0m
+[0;32mI (326366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:13[0m
+[0;32mI (326646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (326946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (326946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (327366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (327366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:14[0m
+[0;32mI (327366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:14[0m
+[0;32mI (328366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (328366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:15[0m
+[0;32mI (328366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:15[0m
+[0;32mI (329366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (329366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:16[0m
+[0;32mI (329366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:16[0m
+[0;32mI (330366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (330366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:17[0m
+[0;32mI (330366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:17[0m
+[0;32mI (331366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (331366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:18[0m
+[0;32mI (331366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:18[0m
+[0;32mI (331946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (332246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (332246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (332366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (332366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:19[0m
+[0;32mI (332366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:19[0m
+[0;32mI (333366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (333366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:20[0m
+[0;32mI (333366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:20[0m
+[0;32mI (334366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (334366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:21[0m
+[0;32mI (334366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:21[0m
+[0;32mI (335366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (335366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:22[0m
+[0;32mI (335366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:22[0m
+[0;32mI (336366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (336366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:23[0m
+[0;32mI (336366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:23[0m
+[0;32mI (337246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (337366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (337366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:24[0m
+[0;32mI (337366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:24[0m
+[1;31mE (337546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (337546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (338366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (338366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:25[0m
+[0;32mI (338366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:25[0m
+[0;32mI (339366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (339366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:26[0m
+[0;32mI (339366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:26[0m
+[0;32mI (340366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (340366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:27[0m
+[0;32mI (340366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:27[0m
+[0;32mI (341366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (341366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:28[0m
+[0;32mI (341366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:28[0m
+[0;32mI (342366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (342366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:29[0m
+[0;32mI (342366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:29[0m
+[0;32mI (342546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (342846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (342846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (343366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (343366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:30[0m
+[0;32mI (343366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:30[0m
+[0;32mI (344366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (344366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:31[0m
+[0;32mI (344366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:31[0m
+[0;32mI (345366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (345366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:32[0m
+[0;32mI (345366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:32[0m
+[0;32mI (346366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (346366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:33[0m
+[0;32mI (346366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:33[0m
+[0;32mI (347366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (347366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:34[0m
+[0;32mI (347366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:34[0m
+[0;32mI (347846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (348146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (348146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (348366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (348366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:35[0m
+[0;32mI (348366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:35[0m
+[0;32mI (349366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (349366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:36[0m
+[0;32mI (349366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:36[0m
+[0;32mI (350366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (350366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:37[0m
+[0;32mI (350366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:37[0m
+[0;32mI (351366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (351366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:38[0m
+[0;32mI (351366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:38[0m
+[0;32mI (352366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (352366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:39[0m
+[0;32mI (352366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:39[0m
+[0;32mI (353146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (353366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (353366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:40[0m
+[0;32mI (353366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:40[0m
+[1;31mE (353446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (353446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (354366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (354366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:41[0m
+[0;32mI (354366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:41[0m
+[0;32mI (355366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (355366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:42[0m
+[0;32mI (355366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:42[0m
+[0;32mI (356366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (356366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:43[0m
+[0;32mI (356366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:43[0m
+[0;32mI (357366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (357366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:44[0m
+[0;32mI (357366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:44[0m
+[0;32mI (358366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (358366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:45[0m
+[0;32mI (358366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:45[0m
+[0;32mI (358446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (358746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (358746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (359366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (359366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:46[0m
+[0;32mI (359366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:46[0m
+[0;32mI (360366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (360366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:47[0m
+[0;32mI (360366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:47[0m
+[0;32mI (361366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (361366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:48[0m
+[0;32mI (361366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:48[0m
+[0;32mI (362366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (362366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:49[0m
+[0;32mI (362366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:49[0m
+[0;32mI (363366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (363366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:50[0m
+[0;32mI (363366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:50[0m
+[0;32mI (363746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (364046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (364046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (364366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (364366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:51[0m
+[0;32mI (364366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:51[0m
+[0;32mI (365366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (365366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:52[0m
+[0;32mI (365366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:52[0m
+[0;32mI (366366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (366366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:53[0m
+[0;32mI (366366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:53[0m
+[0;32mI (367366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (367366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:54[0m
+[0;32mI (367366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:54[0m
+[0;32mI (368366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (368366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:55[0m
+[0;32mI (368366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:55[0m
+[0;32mI (369046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (369346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (369346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (369366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (369366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:56[0m
+[0;32mI (369366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:56[0m
+[0;32mI (370366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (370366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:57[0m
+[0;32mI (370366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:57[0m
+[0;32mI (371366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (371366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:58[0m
+[0;32mI (371366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:58[0m
+[0;32mI (372366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (372366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:29:59[0m
+[0;32mI (372366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:29:59[0m
+[0;32mI (373366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (373366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:0[0m
+[0;32mI (373366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:0[0m
+[0;32mI (374346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (374366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (374366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:1[0m
+[0;32mI (374366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:1[0m
+[1;31mE (374646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (374646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (375366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (375366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:2[0m
+[0;32mI (375366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:2[0m
+[0;32mI (376366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (376366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:3[0m
+[0;32mI (376366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:3[0m
+[0;32mI (377366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (377366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:4[0m
+[0;32mI (377366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:4[0m
+[0;32mI (378366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (378366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:5[0m
+[0;32mI (378366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:5[0m
+[0;32mI (379366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (379366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:6[0m
+[0;32mI (379366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:6[0m
+[0;32mI (379646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (379946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (379946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (380366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (380366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:7[0m
+[0;32mI (380366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:7[0m
+[0;32mI (381366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (381366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:8[0m
+[0;32mI (381366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:8[0m
+[0;32mI (382366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (382366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:9[0m
+[0;32mI (382366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:9[0m
+[0;32mI (383366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (383366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:10[0m
+[0;32mI (383366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:10[0m
+[0;32mI (384366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (384366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:11[0m
+[0;32mI (384366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:11[0m
+[0;32mI (384946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (385246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (385246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (385366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (385366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:12[0m
+[0;32mI (385366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:12[0m
+[0;32mI (386366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (386366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:13[0m
+[0;32mI (386366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:13[0m
+[0;32mI (387366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (387366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:14[0m
+[0;32mI (387366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:14[0m
+[0;32mI (388366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (388366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:15[0m
+[0;32mI (388366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:15[0m
+[0;32mI (389366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (389366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:16[0m
+[0;32mI (389366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:16[0m
+[0;32mI (390246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (390366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (390366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:17[0m
+[0;32mI (390366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:17[0m
+[1;31mE (390546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (390546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (391366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (391366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:18[0m
+[0;32mI (391366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:18[0m
+[0;32mI (392366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (392366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:19[0m
+[0;32mI (392366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:19[0m
+[0;32mI (393366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (393366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:20[0m
+[0;32mI (393366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:20[0m
+[0;32mI (394366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (394366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:21[0m
+[0;32mI (394366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:21[0m
+[0;32mI (395366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (395366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:22[0m
+[0;32mI (395366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:22[0m
+[0;32mI (395546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (395846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (395846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (396366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (396366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:23[0m
+[0;32mI (396366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:23[0m
+[0;32mI (397366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (397366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:24[0m
+[0;32mI (397366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:24[0m
+[0;32mI (398366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (398366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:25[0m
+[0;32mI (398366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:25[0m
+[0;32mI (399366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (399366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:26[0m
+[0;32mI (399366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:26[0m
+[0;32mI (400366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (400366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:27[0m
+[0;32mI (400366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:27[0m
+[0;32mI (400846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (401146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (401146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (401366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (401366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:28[0m
+[0;32mI (401366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:28[0m
+[0;32mI (402366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (402366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:29[0m
+[0;32mI (402366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:29[0m
+[0;32mI (403366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (403366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:30[0m
+[0;32mI (403366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:30[0m
+[0;32mI (404366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (404366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:31[0m
+[0;32mI (404366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:31[0m
+[0;32mI (405366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (405366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:32[0m
+[0;32mI (405366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:32[0m
+[0;32mI (406146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (406366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (406366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:33[0m
+[0;32mI (406366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:33[0m
+[1;31mE (406446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (406446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (407366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (407366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:34[0m
+[0;32mI (407366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:34[0m
+[0;32mI (408366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (408366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:35[0m
+[0;32mI (408366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:35[0m
+[0;32mI (409366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (409366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:36[0m
+[0;32mI (409366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:36[0m
+[0;32mI (410366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (410366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:37[0m
+[0;32mI (410366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:37[0m
+[0;32mI (411366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (411366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:38[0m
+[0;32mI (411366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:38[0m
+[0;32mI (411446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (411746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (411746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (412366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (412366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:39[0m
+[0;32mI (412366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:39[0m
+[0;32mI (413366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (413366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:40[0m
+[0;32mI (413366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:40[0m
+[0;32mI (414366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (414366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:41[0m
+[0;32mI (414366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:41[0m
+[0;32mI (415366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (415366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:42[0m
+[0;32mI (415366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:42[0m
+[0;32mI (416366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (416366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:43[0m
+[0;32mI (416366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:43[0m
+[0;32mI (416746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (417046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (417046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (417366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (417366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:44[0m
+[0;32mI (417366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:44[0m
+[0;32mI (418366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (418366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:45[0m
+[0;32mI (418366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:45[0m
+[0;32mI (419366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (419366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:46[0m
+[0;32mI (419366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:46[0m
+[0;32mI (420366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (420366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:47[0m
+[0;32mI (420366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:47[0m
+[0;32mI (421366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (421366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:48[0m
+[0;32mI (421366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:48[0m
+[0;32mI (422046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (422346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (422346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (422366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (422366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:49[0m
+[0;32mI (422366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:49[0m
+[0;32mI (423366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (423366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:50[0m
+[0;32mI (423366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:50[0m
+[0;32mI (424366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (424366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:51[0m
+[0;32mI (424366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:51[0m
+[0;32mI (425366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (425366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:52[0m
+[0;32mI (425366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:52[0m
+[0;32mI (426366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (426366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:53[0m
+[0;32mI (426366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:53[0m
+[0;32mI (427346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (427366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (427366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:54[0m
+[0;32mI (427366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:54[0m
+[1;31mE (427646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (427646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (428366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (428366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:55[0m
+[0;32mI (428366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:55[0m
+[0;32mI (429366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (429366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:56[0m
+[0;32mI (429366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:56[0m
+[0;32mI (430366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (430366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:57[0m
+[0;32mI (430366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:57[0m
+[0;32mI (431366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (431366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:58[0m
+[0;32mI (431366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:58[0m
+[0;32mI (432366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (432366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:30:59[0m
+[0;32mI (432366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:30:59[0m
+[0;32mI (432646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (432946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (432946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (433366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (433366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:0[0m
+[0;32mI (433366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:0[0m
+[0;32mI (434366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (434366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:1[0m
+[0;32mI (434366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:1[0m
+[0;32mI (435366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (435366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:2[0m
+[0;32mI (435366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:2[0m
+[0;32mI (436366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (436366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:3[0m
+[0;32mI (436366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:3[0m
+[0;32mI (437366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (437366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:4[0m
+[0;32mI (437366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:4[0m
+[0;32mI (437946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (438246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (438246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (438366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (438366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:5[0m
+[0;32mI (438366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:5[0m
+[0;32mI (439366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (439366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:6[0m
+[0;32mI (439366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:6[0m
+[0;32mI (440366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (440366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:7[0m
+[0;32mI (440366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:7[0m
+[0;32mI (441366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (441366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:8[0m
+[0;32mI (441366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:8[0m
+[0;32mI (442366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (442366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:9[0m
+[0;32mI (442366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:9[0m
+[0;32mI (443246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (443366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (443366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:10[0m
+[0;32mI (443366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:10[0m
+[1;31mE (443546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (443546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (444366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (444366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:11[0m
+[0;32mI (444366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:11[0m
+[0;32mI (445366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (445366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:12[0m
+[0;32mI (445366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:12[0m
+[0;32mI (446366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (446366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:13[0m
+[0;32mI (446366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:13[0m
+[0;32mI (447366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (447366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:14[0m
+[0;32mI (447366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:14[0m
+[0;32mI (448366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (448366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:15[0m
+[0;32mI (448366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:15[0m
+[0;32mI (448546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (448846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (448846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (449366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (449366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:16[0m
+[0;32mI (449366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:16[0m
+[0;32mI (450366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (450366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:17[0m
+[0;32mI (450366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:17[0m
+[0;32mI (451366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (451366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:18[0m
+[0;32mI (451366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:18[0m
+[0;32mI (452366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (452366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:19[0m
+[0;32mI (452366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:19[0m
+[0;32mI (453366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (453366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:20[0m
+[0;32mI (453366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:20[0m
+[0;32mI (453846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (454146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (454146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (454366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (454366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:21[0m
+[0;32mI (454366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:21[0m
+[0;32mI (455366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (455366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:22[0m
+[0;32mI (455366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:22[0m
+[0;32mI (456366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (456366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:23[0m
+[0;32mI (456366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:23[0m
+[0;32mI (457366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (457366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:24[0m
+[0;32mI (457366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:24[0m
+[0;32mI (458366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (458366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:25[0m
+[0;32mI (458366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:25[0m
+[0;32mI (459146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (459366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (459366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:26[0m
+[0;32mI (459366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:26[0m
+[1;31mE (459446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (459446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (460366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (460366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:27[0m
+[0;32mI (460366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:27[0m
+[0;32mI (461366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (461366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:28[0m
+[0;32mI (461366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:28[0m
+[0;32mI (462366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (462366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:29[0m
+[0;32mI (462366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:29[0m
+[0;32mI (463366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (463366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:30[0m
+[0;32mI (463366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:30[0m
+[0;32mI (464366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (464366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:31[0m
+[0;32mI (464366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:31[0m
+[0;32mI (464446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (464746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (464746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (465366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (465366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:32[0m
+[0;32mI (465366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:32[0m
+[0;32mI (466366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (466366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:33[0m
+[0;32mI (466366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:33[0m
+[0;32mI (467366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (467366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:34[0m
+[0;32mI (467366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:34[0m
+[0;32mI (468366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (468366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:35[0m
+[0;32mI (468366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:35[0m
+[0;32mI (469366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (469366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:36[0m
+[0;32mI (469366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:36[0m
+[0;32mI (469746) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (470046) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (470046) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (470366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (470366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:37[0m
+[0;32mI (470366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:37[0m
+[0;32mI (471366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (471366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:38[0m
+[0;32mI (471366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:38[0m
+[0;32mI (472366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (472366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:39[0m
+[0;32mI (472366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:39[0m
+[0;32mI (473366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (473366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:40[0m
+[0;32mI (473366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:40[0m
+[0;32mI (474366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (474366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:41[0m
+[0;32mI (474366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:41[0m
+[0;32mI (475046) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (475346) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (475346) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (475366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (475366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:42[0m
+[0;32mI (475366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:42[0m
+[0;32mI (476366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (476366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:43[0m
+[0;32mI (476366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:43[0m
+[0;32mI (477366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (477366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:44[0m
+[0;32mI (477366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:44[0m
+[0;32mI (478366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (478366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:45[0m
+[0;32mI (478366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:45[0m
+[0;32mI (479366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (479366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:46[0m
+[0;32mI (479366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:46[0m
+[0;32mI (480346) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (480366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (480366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:47[0m
+[0;32mI (480366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:47[0m
+[1;31mE (480646) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (480646) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (481366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (481366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:48[0m
+[0;32mI (481366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:48[0m
+[0;32mI (482366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (482366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:49[0m
+[0;32mI (482366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:49[0m
+[0;32mI (483366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (483366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:50[0m
+[0;32mI (483366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:50[0m
+[0;32mI (484366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (484366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:51[0m
+[0;32mI (484366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:51[0m
+[0;32mI (485366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (485366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:52[0m
+[0;32mI (485366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:52[0m
+[0;32mI (485646) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (485946) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (485946) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (486366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (486366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:53[0m
+[0;32mI (486366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:53[0m
+[0;32mI (487366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (487366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:54[0m
+[0;32mI (487366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:54[0m
+[0;32mI (488366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (488366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:55[0m
+[0;32mI (488366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:55[0m
+[0;32mI (489366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (489366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:56[0m
+[0;32mI (489366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:56[0m
+[0;32mI (490366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (490366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:57[0m
+[0;32mI (490366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:57[0m
+[0;32mI (490946) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (491246) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (491246) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (491366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (491366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:58[0m
+[0;32mI (491366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:58[0m
+[0;32mI (492366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (492366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:31:59[0m
+[0;32mI (492366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:31:59[0m
+[0;32mI (493366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (493366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:0[0m
+[0;32mI (493366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:0[0m
+[0;32mI (494366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (494366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:1[0m
+[0;32mI (494366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:1[0m
+[0;32mI (495366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (495366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:2[0m
+[0;32mI (495366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:2[0m
+[0;32mI (496246) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (496366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (496366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:3[0m
+[0;32mI (496366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:3[0m
+[1;31mE (496546) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (496546) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (497366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (497366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:4[0m
+[0;32mI (497366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:4[0m
+[0;32mI (498366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (498366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:5[0m
+[0;32mI (498366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:5[0m
+[0;32mI (499366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (499366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:6[0m
+[0;32mI (499366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:6[0m
+[0;32mI (500366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (500366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:7[0m
+[0;32mI (500366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:7[0m
+[0;32mI (501366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (501366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:8[0m
+[0;32mI (501366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:8[0m
+[0;32mI (501546) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (501846) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (501846) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (502366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (502366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:9[0m
+[0;32mI (502366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:9[0m
+[0;32mI (503366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (503366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:10[0m
+[0;32mI (503366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:10[0m
+[0;32mI (504366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (504366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:11[0m
+[0;32mI (504366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:11[0m
+[0;32mI (505366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (505366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:12[0m
+[0;32mI (505366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:12[0m
+[0;32mI (506366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (506366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:13[0m
+[0;32mI (506366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:13[0m
+[0;32mI (506846) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (507146) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (507146) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (507366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (507366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:14[0m
+[0;32mI (507366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:14[0m
+[0;32mI (508366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (508366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:15[0m
+[0;32mI (508366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:15[0m
+[0;32mI (509366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (509366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:16[0m
+[0;32mI (509366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:16[0m
+[0;32mI (510366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (510366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:17[0m
+[0;32mI (510366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:17[0m
+[0;32mI (511366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (511366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:18[0m
+[0;32mI (511366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:18[0m
+[0;32mI (512146) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (512366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (512366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:19[0m
+[0;32mI (512366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:19[0m
+[1;31mE (512446) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (512446) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (513366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (513366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:20[0m
+[0;32mI (513366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:20[0m
+[0;32mI (514366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (514366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:21[0m
+[0;32mI (514366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:21[0m
+[0;32mI (515366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (515366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:22[0m
+[0;32mI (515366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:22[0m
+[0;32mI (516366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (516366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:23[0m
+[0;32mI (516366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:23[0m
+[0;32mI (517366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (517366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:24[0m
+[0;32mI (517366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:24[0m
+[0;32mI (517446) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (517746) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 0[0m
+[1;31mE (517746) MH_Z14A: Khong the doc du lieu tu MH-Z14A[0m
+[0;32mI (518366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (518366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:25[0m
+[0;32mI (518366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:25[0m
+[0;32mI (519366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (519366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:26[0m
+[0;32mI (519366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:26[0m
+[0;32mI (520366) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (520366) ds3231_convertTimeToString: Current date & time: 24-4-2025 16:32:27[0m
+[0;32mI (520366) ds3231_test: ⏰ Thời gian hiện tại: 24-4-2025 16:32:27[0m

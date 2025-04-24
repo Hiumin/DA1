@@ -2,43 +2,23 @@
 #include "esp_log.h"
 #include "mhz14a.h" 
 
-#define MHZ14A_UART_PORT UART_NUM_1
-#define MHZ14A_TX_PIN    32  // Chọn GPIO 4 làm TX
-#define MHZ14A_RX_PIN    33  // Chọn GPIO 5 làm RX
-
-void init_mhz14a_sensor(void) {
-
-    uart_config_t uart_config = {
-        .baud_rate = 9600,
-        .data_bits = UART_DATA_8_BITS,
-        .parity    = UART_PARITY_DISABLE,
-        .stop_bits = UART_STOP_BITS_1,
-        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
-        .source_clk = UART_SCLK_DEFAULT
-    };
-
-    // Khởi tạo UART cho MH-Z14A
-    if (mhz14a_initUART(NULL) != ESP_OK) {
-        ESP_LOGE("MH_Z14A", "Loi khi khoi tao UART cho MHZ14a.");
-        return;
-    }
-    ESP_LOGI("MH_Z14A", "UART cho MHZ14a da duoc khoi tao.");
-
-    uart_set_pin(MHZ14A_UART_PORT, MHZ14A_TX_PIN, MHZ14A_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-
-}
+//#define MHZ14A_UART_PORT UART_NUM_1
+//#define MHZ14A_TX_PIN    33  // Chọn GPIO 4 làm TX
+//#define MHZ14A_RX_PIN    32  // Chọn GPIO 5 làm RX
 
 void mhz14a_task(void *pvParameters) {
-    init_mhz14a_sensor(); // Khởi tạo cảm biến MH-Z14A
-    // Tạo một task để đọc dữ liệu từ cảm biến MH-Z14A
-    uint32_t co2_ppm;
-    while (1) {
-        if (mhz14a_getDataFromSensorViaUART(&co2_ppm) == ESP_OK) {
-            ESP_LOGI("MH_Z14A", "Nong do CO2: %lu ppm", co2_ppm);
+    uint32_t *co2_t = malloc(sizeof(uint32_t));
+    uart_config_t mhz14a_uart_config = MHZ14A_UART_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK_WITHOUT_ABORT(mhz14a_initUART(&mhz14a_uart_config));
+    ESP_ERROR_CHECK_WITHOUT_ABORT(mhz14a_setRangeSetting(co2_range0To5000));
+    
+    while (1){
+        if(mhz14a_getDataFromSensorViaUART(co2_t) != ESP_OK){
+            ESP_LOGE(__func__, "Failed to get data from MH-Z14A sensor.");
         } else {
-            ESP_LOGE("MH_Z14A", "Khong the doc du lieu tu MH-Z14A");
+            ESP_LOGI(__func__, "CO2 concentration: %d ppm", *co2_t);
         }
-        vTaskDelay(pdMS_TO_TICKS(5000));// Đọc mỗi 5 giây
-    }
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // Đợi 1 giây trước khi đọc lại
+    };
 }
 
