@@ -13,7 +13,7 @@
 
 //SDCARD
 extern void init_sdcard(void);
-extern void write_file(const char *nameFile);
+extern void write_file(const char *nameFile, char *context);
 extern void read_file(const char *nameFile);
 extern void delete_file(const char *nameFile);
 extern void rename_file(const char *oldNameFile, char *newNameFile);
@@ -24,31 +24,32 @@ extern void ds3231_test(void *pvParameters);
 extern void pms7003_task(void *pvParameters);
 
 //MH-Z14A
-extern void init_mhz14a_sensor();
 extern void read_mhz14a_data();
 
 //BME280
 extern esp_err_t bme280_check_connection();
-extern void read_and_save_bme280_data(void);
+extern void read_bme280_data(void);
 
 void app_main(void)
 {
+    ESP_ERROR_CHECK(i2cdev_init());
+    xTaskCreate(ds3231_test, "ds3231_test", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+
     //SDCARD
     // init_sdcard();
-    // write_file("test");
+    // write_file("test", "doanochatluongkhongkhi");
     // read_file("test");
     // rename_file("test","test1");
     // delete_file("test1");
-    // //PMS7003
+    //PMS7003
     // xTaskCreate(pms7003_task, "pms7003_task", 4096, NULL, 5, NULL);
     
     // //BME280
     // bme280_check_connection();
     // read_and_save_bme280_data();
 
-    // //MH-Z14A
-    // init_mhz14a_sensor();
-    // read_mhz14a_data();
-    ESP_ERROR_CHECK(i2cdev_init());
-    xTaskCreate(ds3231_test, "ds3231_test", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+    //MH-Z14A
+    // xTaskCreate(read_mhz14a_data, "read_mhz14a_data", configMINIMAL_STACK_SIZE * 3, NULL, 5, NULL);
+
+    
 }

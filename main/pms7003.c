@@ -4,8 +4,8 @@
 #include "freertos/task.h"
 
 #define PMS_UART_PORT UART_NUM_2  // Cổng UART sử dụng
-#define PMS_PIN_TX (GPIO_NUM_16)  // Chân TX của ESP32
-#define PMS_PIN_RX (GPIO_NUM_17)  // Chân RX của ESP32
+#define PMS_PIN_TX (GPIO_NUM_17)  // Chân TX của ESP32
+#define PMS_PIN_RX (GPIO_NUM_16)  // Chân RX của ESP32
 
 void pms7003_task(void *pvParameters)
 {
@@ -40,7 +40,7 @@ void pms7003_task(void *pvParameters)
             ESP_LOGW("PMS7003", "Failed to read data");
         }
 
-        vTaskDelay(pdMS_TO_TICKS(5000)); // Đọc mỗi 5 giây ...
+        vTaskDelay(pdMS_TO_TICKS(1000)); // Đọc mỗi 5 giây ...
     }
 }
 

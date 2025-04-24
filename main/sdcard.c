@@ -47,10 +47,10 @@ void init_sdcard(void)
     }
 }
 
-void write_file(const char *nameFile)
+void write_file(const char *nameFile , char *context)
 {
     // Ghi dữ liệu vào file test.txt
-    esp_err_t ret = sdcard_writeDataToFile(nameFile, "ESP32");
+    esp_err_t ret = sdcard_writeDataToFile(nameFile, context);
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "File written successfully.");
