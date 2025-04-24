@@ -47,10 +47,10 @@ void init_sdcard(void)
     }
 }
 
-void write_file(const char *nameFile)
+void write_file(const char *nameFile, char *context)
 {
     // Ghi dữ liệu vào file test.txt
-    esp_err_t ret = sdcard_writeDataToFile(nameFile, "ESP32");
+    esp_err_t ret = sdcard_writeDataToFile(nameFile, "%s", context);    
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "File written successfully.");
@@ -106,16 +106,3 @@ void rename_file(const char *oldNameFile, char *newNameFile)
     }
 }
 
-void sdcard_task(void *pvParameters)
-{
-    init_sdcard(); // Khởi tạo thẻ SD
-    // Tạo một task để thực hiện các thao tác với thẻ SD
-    while (1)
-    {
-        write_file("test");
-        read_file("test");
-        rename_file("test", "test1");
-        delete_file("test1");
-        vTaskDelay(pdMS_TO_TICKS(1000)); // Delay 1 giây giữa các thao tác
-    }
-}

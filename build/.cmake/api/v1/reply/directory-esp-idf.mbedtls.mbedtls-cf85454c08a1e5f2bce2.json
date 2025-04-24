@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/mbedtls/mbedtls",
+		"source" : "D:/Hiep/esp32/Espressif/v5.1.6/esp-idf/components/mbedtls/mbedtls"
+	}
+}

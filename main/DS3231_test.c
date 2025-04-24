@@ -26,7 +26,7 @@ void ds3231_test(void *pvParameters) {
 
     while (1) {
         // Lấy và hiển thị thời gian hiện tại
-        ds3231_convertTimeToString(&ds3231, time_str, sizeof(time_str), 5);  // format: dd-mm-yyyy hh:mm:ss
+        ds3231_convertTimeToString(&ds3231, time_str, sizeof(time_str), 1);  // format: dd-mm-yyyy hh:mm:ss
         ESP_LOGI(TAG, "⏰ Thời gian hiện tại: %s", time_str);
 
 
