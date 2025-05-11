@@ -1,0 +1,170 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+ET),boot:0x17 (SPI_FAST������RNG early entropy source...
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Lets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 12 2025 00:36:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fec8h ( 65224) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001fef0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001ff14 vaddr=3ffb0000 size=00104h (   260) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=28b28h (166696) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=00048b50 vaddr=3ffb0104 size=0253ch (  9532) load[0m
+[0;32mI (183) esp_image: segment 5: paddr=0004b094 vaddr=40080000 size=10154h ( 65876) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (227) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     test[0m
+[0;32mI (239) app_init: App version:      ce5b3a4-dirty[0m
+[0;32mI (243) app_init: Compile time:     May 12 2025 00:36:02[0m
+[0;32mI (249) app_init: ELF file SHA256:  fe706b1cc...[0m
+[0;32mI (253) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (259) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (263) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (267) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB3138 len 0002CEC8 (179 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 40090154 len 0000FEAC (63 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (307) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) sdcard_initialize: Initializing SD card[0m
+[0;32mI (342) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (342) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (342) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (352) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (402) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (462) sdcard_initialize: SDCard has been initialized.[0m
+[0;32mI (462) sdcard_initialize: Filesystem mounted[0m
+[0;32mI (462) sdcard_initialize: SDCard properties.[0m
+Name: CBADS
+Type: SDHC
+Speed: 400.00 kHz (limit: 400.00 kHz)
+Size: 3821MB
+CSD: ver=2, sector_size=512, capacity=7825408 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (482) SDcard: SD card initialized successfully.[0m
+[0;32mI (482) ds3231_initialize: DS3231 module initialize success.[0m
+[0;32mI (492) bme280_task: Initialize BME280 sensor(I2C/Wire1).[0m
+[1;31mE (492) i2cdev: Could not give port mutex 0[0m
+Khởi tạo DS3231 thành công!E (502) i2c: i2c driver install error
+[0;32mI (502) bme280_init: BME280 sensor initialze successful.[0m
+[0;32mI (502) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (512) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (512) ds3231_convertTimeToString: Current date & time: 0-0-0 4:1073470448:1073470480[0m
+[0;32mI (522) BME280: Nhiet do: 24.27 °C, Ap suat: 670.43 hPa, Do am: 95.30%[0m
+[0;32mI (532) ds3231_test: ⏰ Thời gian hiện tại: 0-0-0 4:1073470448:1073470480[0m
+[0;32mI (502) main_task: Returned from app_main()[0m
+[0;32mI (5532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (5532) BME280: Nhiet do: 27.43 °C, Ap suat: 1010.91 hPa, Do am: 54.73%[0m
+[1;31mE (5542) i2c: i2c driver install error[0m
+[0;32mI (5542) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5542) ds3231_convertTimeToString: Current date & time: 0-0-0 0:0:0[0m
+[0;32mI (5542) ds3231_test: ⏰ Thời gian hiện tại: 0-0-0 0:0:0[0m
+[0;32mI (10532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (10532) BME280: Nhiet do: 27.43 °C, Ap suat: 1010.95 hPa, Do am: 54.73%[0m
+[1;31mE (10552) i2c: i2c driver install error[0m
+[0;32mI (10552) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10552) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (10552) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (15532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (15532) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.96 hPa, Do am: 54.72%[0m
+[1;31mE (15562) i2c: i2c driver install error[0m
+[0;32mI (15562) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (15562) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (15562) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (20532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (20532) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.98 hPa, Do am: 54.73%[0m
+[1;31mE (20572) i2c: i2c driver install error[0m
+[0;32mI (20572) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (20572) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (20572) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (25532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (25532) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.91 hPa, Do am: 54.74%[0m
+[1;31mE (25582) i2c: i2c driver install error[0m
+[0;32mI (25582) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (25582) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (25582) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (30532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (30532) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.95 hPa, Do am: 54.70%[0m
+[1;31mE (30592) i2c: i2c driver install error[0m
+[0;32mI (30592) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (30592) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (30592) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (35532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (35532) BME280: Nhiet do: 27.41 °C, Ap suat: 1010.92 hPa, Do am: 54.71%[0m
+[1;31mE (35602) i2c: i2c driver install error[0m
+[0;32mI (35602) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (35602) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (35602) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (40532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (40532) BME280: Nhiet do: 27.40 °C, Ap suat: 1010.92 hPa, Do am: 54.70%[0m
+[1;31mE (40612) i2c: i2c driver install error[0m
+[0;32mI (40612) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (40612) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (40612) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (45532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (45532) BME280: Nhiet do: 27.40 °C, Ap suat: 1010.92 hPa, Do am: 54.74%[0m
+[1;31mE (45622) i2c: i2c driver install error[0m
+[0;32mI (45622) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (45622) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (45622) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (50532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (50532) BME280: Nhiet do: 27.40 °C, Ap suat: 1010.90 hPa, Do am: 54.73%[0m
+[1;31mE (50632) i2c: i2c driver install error[0m
+[0;32mI (50632) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (50632) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (50632) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (55532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (55532) BME280: Nhiet do: 27.40 °C, Ap suat: 1010.88 hPa, Do am: 54.71%[0m
+[1;31mE (55642) i2c: i2c driver install error[0m
+[0;32mI (55642) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (55642) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (55642) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (60532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (60532) BME280: Nhiet do: 27.41 °C, Ap suat: 1010.95 hPa, Do am: 54.71%[0m
+[1;31mE (60652) i2c: i2c driver install error[0m
+[0;32mI (60652) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (60652) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (60652) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (65532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (65532) BME280: Nhiet do: 27.40 °C, Ap suat: 1010.92 hPa, Do am: 54.73%[0m
+[1;31mE (65662) i2c: i2c driver install error[0m
+[0;32mI (65662) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (65662) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (65662) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (70532) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (70532) BME280: Nhiet do: 27.41 °C, Ap suat: 1010.91 hPa, Do am: 54.74%[0m
+[1;31mE (70672) i2c: i2c driver install error[0m
+[0;32mI (70672) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (70672) ds3231_convertTimeToString: Current date & time: 1061172444-0-0 500:1073470480:-2146601979[0m
+[0;32mI (70672) ds3231_test: ⏰ Thời gian hiện tại: 1061172444-0-0 500:1073470480:-2146601979[0m

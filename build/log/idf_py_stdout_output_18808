@@ -1,0 +1,200 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+17 (SPI_FASTK�����RNG early entropy source...
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## L�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 12 2025 00:36:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=11080h ( 69760) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=000210a8 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=000210cc vaddr=3ffb0000 size=02650h (  9808) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00023724 vaddr=40080000 size=0c8f4h ( 51444) load[0m
+[0;32mI (144) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=2bad8h (178904) map[0m
+[0;32mI (205) esp_image: segment 5: paddr=0005bb00 vaddr=4008c8f4 size=03c24h ( 15396) load[0m
+[0;32mI (219) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (219) boot: Disabling RNG early entropy source...[0m
+[0;32mI (230) cpu_start: Multicore app[0m
+[0;32mI (238) cpu_start: Pro cpu start user code[0m
+[0;32mI (238) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) app_init: Application information:[0m
+[0;32mI (238) app_init: Project name:     test[0m
+[0;32mI (242) app_init: App version:      ce5b3a4-dirty[0m
+[0;32mI (246) app_init: Compile time:     May 12 2025 00:36:02[0m
+[0;32mI (251) app_init: ELF file SHA256:  956129540...[0m
+[0;32mI (256) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (265) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (269) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB3160 len 0002CEA0 (179 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 40090518 len 0000FAE8 (62 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (325) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) sdcard_initialize: Initializing SD card[0m
+[0;32mI (345) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (345) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (345) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (405) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (465) sdcard_initialize: SDCard has been initialized.[0m
+[0;32mI (465) sdcard_initialize: Filesystem mounted[0m
+[0;32mI (465) sdcard_initialize: SDCard properties.[0m
+Name: CBADS
+Type: SDHC
+Speed: 400.00 kHz (limit: 400.00 kHz)
+Size: 3821MB
+CSD: ver=2, sector_size=512, capacity=7825408 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (485) SDcard: SD card initialized successfully.[0m
+[0;32mI (485) ds3231_initialize: DS3231 module initialize success.[0m
+Khởi tạo DS3231 thành công!
+[0;32mI (495) pms7003_initUart: PMS7003 UART port initialize successful.[0m
+[0;32mI (495) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (495) pms7003_activeMode: Set active mode successfuly.[0m
+[0;32mI (495) bme280_task: Initialize BME280 sensor(I2C/Wire1).[0m
+[0;32mI (495) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (505) sdcard_writeDataToFile: Opening file /sdcard/test8.txt...[0m
+[0;32mI (505) ds3231_convertTimeToString: Current date & time: 12-5-2025 2:24:59[0m
+[0;32mI (525) bme280_init: BME280 sensor initialze successful.[0m
+[0;32mI (535) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 2:24:59[0m
+[0;32mI (535) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (505) main_task: Returned from app_main()[0m
+[0;32mI (545) BME280: Nhiet do: 24.27 °C, Ap suat: 670.43 hPa, Do am: 95.30%[0m
+[0;32mI (585) SDcard: Success to create string data(44) for writing.[0m
+[0;32mI (585) SDcard: Writing data to file /sdcard/test8.txt...[0m
+[0;32mI (585) SDcard: 12-5-2025 2:24:59,0.00,0.00,0.00,0,0,0,0[0m
+
+;
+
+[0;32mI (595) sdcard_writeDataToFile: Success to write data to file /sdcard/test8.txt.[0m
+[0;32mI (625) SDcard: File written successfully.[0m
+[0;32mI (1515) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (1535) pms7003_readData: Bytes received: 32[0m
+[0;32mI (1535) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 08 00 11 00 13 00 08 00 11 00 13 02 EE 02 55 00 52 00 00 00 00 00 00 12 00 02 AE 
+[0;32mI (1535) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (1545) pms7003_readData: PM1.0: 8ug/m3  PM2.5: 17ug/m3  PM10: 19ug/m3.[0m
+[0;32mI (1545) PMS7003: PM1.0: 8 µg/m³, PM2.5: 17 µg/m³, PM10: 19 µg/m³[0m
+[0;32mI (2515) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (3515) mhz14a_initUART: MHZ14A initialize success.[0m
+[0;32mI (3515) mhz14a_initUART: MHZ14A UART port initialize successful.[0m
+[0;32mI (3515) mhz14a_setRangeSetting: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (3515) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (3835) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 18[0m
+[1;31mE (3835) mhz14a_task: Failed to get data from MH-Z14A sensor.[0m
+[0;32mI (5545) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5545) ds3231_convertTimeToString: Current date & time: 12-5-2025 2:25:4[0m
+[0;32mI (5545) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 2:25:4[0m
+[0;32mI (5555) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (5555) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.52 hPa, Do am: 54.34%[0m
+[0;32mI (5625) sdcard_writeDataToFile: Opening file /sdcard/test8.txt...[0m
+[0;32mI (5685) SDcard: Success to create string data(50) for writing.[0m
+[0;32mI (5685) SDcard: Writing data to file /sdcard/test8.txt...[0m
+[0;32mI (5685) SDcard: 12-5-2025 2:25:4,27.42,54.34,1010.52,8,17,19,0[0m
+
+;
+
+[0;32mI (5685) sdcard_writeDataToFile: Success to write data to file /sdcard/test8.txt.[0m
+[0;32mI (5715) SDcard: File written successfully.[0m
+[0;32mI (6555) pms7003_readData: Bytes received: 128[0m
+[0;32mI (6555) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 08 00 11 00 13 00 08 00 11 00 13 02 F2 02 5A 00 54 00 00 00 00 00 00 12 00 02 B9 42 4D 00 1C 00 08 00 11 00 14 00 08 00 11 00 14 02 F6 02 60 00 56 00 00 00 00 00 00 12 00 02 C7 42 4D 00 1C 00 08 00 11 00 14 00 08 00 11 00 14 02 FB 02 67 00 57 00 00 00 00 00 00 12 00 02 D4 42 4D 00 1C 00 08 00 11 00 14 00 08 00 11 00 14 02 FD 02 6C 00 57 00 00 00 00 00 00 12 00 02 DB 
+[0;32mI (6585) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (6585) pms7003_readData: PM1.0: 8ug/m3  PM2.5: 17ug/m3  PM10: 19ug/m3.[0m
+[0;32mI (6595) PMS7003: PM1.0: 8 µg/m³, PM2.5: 17 µg/m³, PM10: 19 µg/m³[0m
+[0;32mI (8835) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (9135) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 2 82 71 0 4 0 219][0m
+[0;32mI (9135) mhz14a_task: CO2 concentration: 594 ppm[0m
+[0;32mI (10545) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10545) ds3231_convertTimeToString: Current date & time: 12-5-2025 2:25:9[0m
+[0;32mI (10545) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 2:25:9[0m
+[0;32mI (10565) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (10565) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.52 hPa, Do am: 54.32%[0m
+[0;32mI (10725) sdcard_writeDataToFile: Opening file /sdcard/test8.txt...[0m
+[0;32mI (10785) SDcard: Success to create string data(52) for writing.[0m
+[0;32mI (10785) SDcard: Writing data to file /sdcard/test8.txt...[0m
+[0;32mI (10785) SDcard: 12-5-2025 2:25:9,27.42,54.32,1010.52,8,17,19,594[0m
+
+;
+
+[0;32mI (10785) sdcard_writeDataToFile: Success to write data to file /sdcard/test8.txt.[0m
+[0;32mI (10815) SDcard: File written successfully.[0m
+[0;32mI (11595) pms7003_readData: Bytes received: 128[0m
+[0;32mI (11595) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 09 00 12 00 15 00 09 00 12 00 15 02 FE 02 70 00 57 00 00 00 00 00 00 12 00 02 E6 42 4D 00 1C 00 09 00 12 00 15 00 09 00 12 00 15 02 FF 02 74 00 56 00 00 00 00 00 00 12 00 02 EA 42 4D 00 1C 00 09 00 12 00 15 00 09 00 12 00 15 02 FF 02 77 00 56 00 00 00 00 00 00 12 00 02 ED 42 4D 00 1C 00 07 00 11 00 15 00 07 00 11 00 15 02 FD 02 77 00 55 00 00 00 00 00 00 12 00 02 E4 
+[0;32mI (11625) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (11625) pms7003_readData: PM1.0: 9ug/m3  PM2.5: 18ug/m3  PM10: 21ug/m3.[0m
+[0;32mI (11635) PMS7003: PM1.0: 9 µg/m³, PM2.5: 18 µg/m³, PM10: 21 µg/m³[0m
+[0;32mI (14135) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (14435) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 2 84 71 0 4 0 217][0m
+[0;32mI (14435) mhz14a_task: CO2 concentration: 596 ppm[0m
+[0;32mI (15545) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (15545) ds3231_convertTimeToString: Current date & time: 12-5-2025 2:25:14[0m
+[0;32mI (15545) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 2:25:14[0m
+[0;32mI (15565) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (15565) BME280: Nhiet do: 27.43 °C, Ap suat: 1010.52 hPa, Do am: 54.31%[0m
+[0;32mI (15825) sdcard_writeDataToFile: Opening file /sdcard/test8.txt...[0m
+[0;32mI (15885) SDcard: Success to create string data(53) for writing.[0m
+[0;32mI (15885) SDcard: Writing data to file /sdcard/test8.txt...[0m
+[0;32mI (15885) SDcard: 12-5-2025 2:25:14,27.43,54.31,1010.52,9,18,21,596[0m
+
+;
+
+[0;32mI (15885) sdcard_writeDataToFile: Success to write data to file /sdcard/test8.txt.[0m
+[0;32mI (15925) SDcard: File written successfully.[0m
+[0;32mI (16635) pms7003_readData: Bytes received: 128[0m
+[0;32mI (16635) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 07 00 11 00 15 00 07 00 11 00 15 02 FC 02 77 00 55 00 00 00 00 00 00 12 00 02 E3 42 4D 00 1C 00 07 00 11 00 15 00 07 00 11 00 15 02 FA 02 77 00 55 00 00 00 00 00 00 12 00 02 E1 42 4D 00 1C 00 08 00 12 00 16 00 08 00 12 00 16 02 F8 02 77 00 55 00 00 00 00 00 00 12 00 02 E5 42 4D 00 1C 00 08 00 12 00 15 00 08 00 12 00 15 02 F5 02 76 00 54 00 00 00 00 00 00 12 00 02 DE 
+[0;32mI (16665) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (16665) pms7003_readData: PM1.0: 7ug/m3  PM2.5: 17ug/m3  PM10: 21ug/m3.[0m
+[0;32mI (16675) PMS7003: PM1.0: 7 µg/m³, PM2.5: 17 µg/m³, PM10: 21 µg/m³[0m
+[0;32mI (19435) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (19735) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 2 83 71 0 4 0 218][0m
+[0;32mI (19735) mhz14a_task: CO2 concentration: 595 ppm[0m
+[0;32mI (20545) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (20545) ds3231_convertTimeToString: Current date & time: 12-5-2025 2:25:19[0m
+[0;32mI (20545) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 2:25:19[0m
+[0;32mI (20565) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (20565) BME280: Nhiet do: 27.42 °C, Ap suat: 1010.53 hPa, Do am: 54.27%[0m
+[0;32mI (20925) sdcard_writeDataToFile: Opening file /sdcard/test8.txt...[0m
+[0;32mI (20985) SDcard: Success to create string data(53) for writing.[0m
+[0;32mI (20985) SDcard: Writing data to file /sdcard/test8.txt...[0m
+[0;32mI (20985) SDcard: 12-5-2025 2:25:19,27.42,54.27,1010.53,7,17,21,595[0m
+
+;
+
+[0;32mI (20985) sdcard_writeDataToFile: Success to write data to file /sdcard/test8.txt.[0m
+[0;32mI (21025) SDcard: File written successfully.[0m
+[0;32mI (21675) pms7003_readData: Bytes received: 128[0m
+[0;32mI (21675) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 08 00 12 00 15 00 08 00 12 00 15 02 F2 02 74 00 54 00 00 00 00 00 00 12 00 02 D9 42 4D 00 1C 00 08 00 12 00 15 00 08 00 12 00 15 02 F1 02 74 00 55 00 00 00 00 00 00 12 00 02 D9 42 4D 00 1C 00 08 00 12 00 15 00 08 00 12 00 15 02 F1 02 75 00 55 00 00 00 00 00 00 12 00 02 DA 42 4D 00 1C 00 08 00 12 00 15 00 08 00 12 00 15 02 F0 02 75 00 54 00 00 00 00 00 00 12 00 02 D8 
+[0;32mI (21705) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (21705) pms7003_readData: PM1.0: 8ug/m3  PM2.5: 18ug/m3  PM10: 21ug/m3.[0m
+[0;32mI (21715) PMS7003: PM1.0: 8 µg/m³, PM2.5: 18 µg/m³, PM10: 21 µg/m³[0m

@@ -5,11 +5,13 @@
 #include "bme280.h"
 #include "sdcard.h"
 
+float temperature, pressure, humidity;
+
 void bme280_task(void *pvParameters) {
     bmp280_t bme280_device;
     bmp280_params_t bme280_params;
-    float temperature, pressure, humidity;
-    ESP_ERROR_CHECK_WITHOUT_ABORT(i2cdev_init());
+    
+    // ESP_ERROR_CHECK_WITHOUT_ABORT(i2cdev_init());
     ESP_LOGI(__func__, "Initialize BME280 sensor(I2C/Wire%d).", CONFIG_BME_I2C_PORT);
 
     ESP_ERROR_CHECK_WITHOUT_ABORT(bme280_init(&bme280_device, &bme280_params, BME280_ADDRESS,

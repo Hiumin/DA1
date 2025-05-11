@@ -4,9 +4,10 @@
 #include <ds3231.h>
 #include <string.h>
 #include "DS3231Time.h"
+#include "driver/i2c.h"
 
-#define CONFIG_I2C_MASTER_SDA GPIO_NUM_21
-#define CONFIG_I2C_MASTER_SCL GPIO_NUM_22
+#define CONFIG_I2C_MASTER_SDA GPIO_NUM_26
+#define CONFIG_I2C_MASTER_SCL GPIO_NUM_27
 
 
 i2c_dev_t ds3231;
@@ -14,15 +15,17 @@ i2c_dev_t ds3231;
 #define SDA_GPIO GPIO_NUM_26
 #define SCL_GPIO GPIO_NUM_27
 static const char *TAG = "ds3231_test";
+
+char time_str[64];
+
 void ds3231_test(void *pvParameters) {
     esp_err_t ret = ds3231_initialize(&ds3231, I2C_PORT, SDA_GPIO, SCL_GPIO);
     if (ret != ESP_OK) {
-        ESP_LOGE(TAG, "Khởi tạo DS3231 thất bại!");
+        ESP_LOGE(TAG, "Khởi tạo DS3231 thất bại!\n");
         vTaskDelete(NULL);
         return;
     }
-
-    char time_str[64];
+    printf("Khởi tạo DS3231 thành công!\n");
 
     while (1) {
         // Lấy và hiển thị thời gian hiện tại
@@ -30,7 +33,7 @@ void ds3231_test(void *pvParameters) {
         ESP_LOGI(TAG, "⏰ Thời gian hiện tại: %s", time_str);
 
 
-        vTaskDelay(pdMS_TO_TICKS(1000));  // delay 1 giây
+        vTaskDelay(pdMS_TO_TICKS(5000));  // delay 5 giây
     }
 
     // Không bao giờ đến đây, nhưng phòng ngừa

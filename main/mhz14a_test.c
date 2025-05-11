@@ -2,9 +2,7 @@
 #include "esp_log.h"
 #include "mhz14a.h" 
 
-//#define MHZ14A_UART_PORT UART_NUM_1
-//#define MHZ14A_TX_PIN    33  // Chọn GPIO 4 làm TX
-//#define MHZ14A_RX_PIN    32  // Chọn GPIO 5 làm RX
+uint32_t co2;
 
 void mhz14a_task(void *pvParameters) {
     uint32_t *co2_t = malloc(sizeof(uint32_t));
@@ -17,8 +15,9 @@ void mhz14a_task(void *pvParameters) {
             ESP_LOGE(__func__, "Failed to get data from MH-Z14A sensor.");
         } else {
             ESP_LOGI(__func__, "CO2 concentration: %d ppm", *co2_t);
+            co2 = *co2_t; // Lưu giá trị CO2 vào biến toàn cục
         }
-        vTaskDelay(1000 / portTICK_PERIOD_MS); // Đợi 1 giây trước khi đọc lại
+        vTaskDelay(5000 / portTICK_PERIOD_MS); // Đợi 5 giây trước khi đọc lại
     };
 }
 

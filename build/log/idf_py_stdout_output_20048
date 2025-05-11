@@ -1,0 +1,91 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+17 (SPI_FAS������RNG early entropy source...
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Lets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 12 2025 00:36:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b428h ( 46120) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001b450 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001b474 vaddr=3ffb0000 size=0239ch (  9116) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001d818 vaddr=40080000 size=02800h ( 10240) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=19500h (103680) map[0m
+[0;32mI (159) esp_image: segment 5: paddr=00039528 vaddr=40082800 size=0bacch ( 47820) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     test[0m
+[0;32mI (207) app_init: App version:      ce5b3a4-dirty[0m
+[0;32mI (211) app_init: Compile time:     May 12 2025 00:36:02[0m
+[0;32mI (216) app_init: ELF file SHA256:  e970e81f9...[0m
+[0;32mI (221) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+I (230) efuse_init: Max chip rev:     v3.99 
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2D20 len 0002D2E0 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (260) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 4008E2CC len 00011D34 (71 KiB): IRAM[0m
+[0;32mI (273) spi_flash: detected chip: generic[0m
+[0;32mI (275) spi_flash: flash io: dio[0m
+[0;33mW (278) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (290) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (300) main_task: Started on CPU0[0m
+[0;32mI (310) main_task: Calling app_main()[0m
+[0;32mI (310) ds3231_initialize: DS3231 module initialize success.[0m
+[0;32mI (310) main_task: Returned from app_main()[0m
+Khởi tạo DS3231 thành công!I (310) ds3231_convertTimeToString: Convert time to string successfully.
+[0;32mI (320) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:25[0m
+[0;32mI (330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:25[0m
+[0;32mI (5330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:30[0m
+[0;32mI (5330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:30[0m
+[0;32mI (10330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:35[0m
+[0;32mI (10330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:35[0m
+[0;32mI (15330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (15330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:40[0m
+[0;32mI (15330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:40[0m
+[0;32mI (20330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (20330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:45[0m
+[0;32mI (20330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:45[0m
+[0;32mI (25330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (25330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:50[0m
+[0;32mI (25330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:50[0m
+[0;32mI (30330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (30330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:19:55[0m
+[0;32mI (30330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:19:55[0m
+[0;32mI (35330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (35330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:20:0[0m
+[0;32mI (35330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:20:0[0m
+[0;32mI (40330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (40330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:20:5[0m
+[0;32mI (40330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:20:5[0m
+[0;32mI (45330) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (45330) ds3231_convertTimeToString: Current date & time: 12-5-2025 1:20:10[0m
+[0;32mI (45330) ds3231_test: ⏰ Thời gian hiện tại: 12-5-2025 1:20:10[0m

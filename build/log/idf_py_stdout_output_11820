@@ -1,0 +1,259 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+17 (SPI_FAST������RNG early entropy source...
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## L�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 12 2025 00:36:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fd68h ( 64872) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001fd90 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001fdb4 vaddr=3ffb0000 size=00264h (   612) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=286d4h (165588) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=000486fc vaddr=3ffb0264 size=023bch (  9148) load[0m
+[0;32mI (182) esp_image: segment 5: paddr=0004aac0 vaddr=40080000 size=0fcd0h ( 64720) load[0m
+[0;32mI (215) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (215) boot: Disabling RNG early entropy source...[0m
+[0;32mI (226) cpu_start: Multicore app[0m
+[0;32mI (234) cpu_start: Pro cpu start user code[0m
+[0;32mI (234) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (234) app_init: Application information:[0m
+[0;32mI (234) app_init: Project name:     test[0m
+[0;32mI (238) app_init: App version:      ce5b3a4-dirty[0m
+[0;32mI (242) app_init: Compile time:     May 12 2025 00:36:02[0m
+[0;32mI (247) app_init: ELF file SHA256:  6fff7293e...[0m
+[0;32mI (252) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (258) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (261) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (265) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFB30F8 len 0002CF08 (179 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 4008FCD0 len 00010330 (64 KiB): IRAM[0m
+[0;32mI (304) spi_flash: detected chip: generic[0m
+[0;32mI (306) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) sdcard_initialize: Initializing SD card[0m
+[0;32mI (341) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (341) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (341) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (351) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (401) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (461) sdcard_initialize: SDCard has been initialized.[0m
+[0;32mI (461) sdcard_initialize: Filesystem mounted[0m
+[0;32mI (461) sdcard_initialize: SDCard properties.[0m
+Name: CBADS
+Type: SDHC
+Speed: 400.00 kHz (limit: 400.00 kHz)
+Size: 3821MB
+CSD: ver=2, sector_size=512, capacity=7825408 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (481) SDcard: SD card initialized successfully.[0m
+[0;32mI (481) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (481) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (491) main_task: Returned from app_main()[0m
+[0;32mI (581) SDcard: Success to create string data(27) for writing.[0m
+[0;32mI (581) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (581) SDcard: ,0.00,0.00,0.00,0,0,0,0[0m
+
+;
+
+[0;32mI (591) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (701) SDcard: File written successfully.[0m
+[0;32mI (1481) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (2481) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (3481) mhz14a_initUART: MHZ14A initialize success.[0m
+[0;32mI (3481) mhz14a_initUART: MHZ14A UART port initialize successful.[0m
+[0;32mI (3481) mhz14a_setRangeSetting: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (3481) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (3801) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 18[0m
+[1;31mE (3801) mhz14a_task: Failed to get data from MH-Z14A sensor.[0m
+[0;32mI (5701) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (5761) SDcard: Success to create string data(27) for writing.[0m
+[0;32mI (5761) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (5761) SDcard: ,0.00,0.00,0.00,0,0,0,0[0m
+
+;
+
+[0;32mI (5761) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (5791) SDcard: File written successfully.[0m
+[0;32mI (8801) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (9101) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 183 70 0 0 0 124][0m
+[0;32mI (9101) mhz14a_task: CO2 concentration: 439 ppm[0m
+[0;32mI (10791) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (10841) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (10851) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (10851) SDcard: ,0.00,0.00,0.00,0,0,0,439[0m
+
+;
+
+[0;32mI (10851) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (10881) SDcard: File written successfully.[0m
+[0;32mI (14101) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (14401) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 183 70 0 0 0 124][0m
+[0;32mI (14401) mhz14a_task: CO2 concentration: 439 ppm[0m
+[0;32mI (15881) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (15931) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (15941) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (15941) SDcard: ,0.00,0.00,0.00,0,0,0,439[0m
+
+;
+
+[0;32mI (15941) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (15971) SDcard: File written successfully.[0m
+[0;32mI (19401) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (19701) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 183 70 0 0 0 124][0m
+[0;32mI (19701) mhz14a_task: CO2 concentration: 439 ppm[0m
+[0;32mI (20971) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (21021) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (21031) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (21031) SDcard: ,0.00,0.00,0.00,0,0,0,439[0m
+
+;
+
+[0;32mI (21031) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (21061) SDcard: File written successfully.[0m
+[0;32mI (24701) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (25001) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 184 70 0 0 0 123][0m
+[0;32mI (25001) mhz14a_task: CO2 concentration: 440 ppm[0m
+[0;32mI (26061) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (26111) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (26121) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (26121) SDcard: ,0.00,0.00,0.00,0,0,0,440[0m
+
+;
+
+[0;32mI (26121) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (26151) SDcard: File written successfully.[0m
+[0;32mI (30001) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (30301) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 184 70 0 0 0 123][0m
+[0;32mI (30301) mhz14a_task: CO2 concentration: 440 ppm[0m
+[0;32mI (31151) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (31201) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (31211) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (31211) SDcard: ,0.00,0.00,0.00,0,0,0,440[0m
+
+;
+
+[0;32mI (31211) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (31241) SDcard: File written successfully.[0m
+[0;32mI (35301) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (35601) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 184 70 0 0 0 123][0m
+[0;32mI (35601) mhz14a_task: CO2 concentration: 440 ppm[0m
+[0;32mI (36241) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (36291) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (36301) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (36301) SDcard: ,0.00,0.00,0.00,0,0,0,440[0m
+
+;
+
+[0;32mI (36301) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (36331) SDcard: File written successfully.[0m
+[0;32mI (40601) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (40901) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 183 70 0 0 0 124][0m
+[0;32mI (40901) mhz14a_task: CO2 concentration: 439 ppm[0m
+[0;32mI (41331) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (41381) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (41391) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (41391) SDcard: ,0.00,0.00,0.00,0,0,0,439[0m
+
+;
+
+[0;32mI (41391) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (41421) SDcard: File written successfully.[0m
+[0;32mI (45901) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (46201) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 182 70 0 0 0 125][0m
+[0;32mI (46201) mhz14a_task: CO2 concentration: 438 ppm[0m
+[0;32mI (46421) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (46471) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (46481) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (46481) SDcard: ,0.00,0.00,0.00,0,0,0,438[0m
+
+;
+
+[0;32mI (46481) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (46511) SDcard: File written successfully.[0m
+[0;32mI (51201) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (51501) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 182 70 0 0 0 125][0m
+[0;32mI (51501) mhz14a_task: CO2 concentration: 438 ppm[0m
+[0;32mI (51511) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (51561) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (51571) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (51571) SDcard: ,0.00,0.00,0.00,0,0,0,438[0m
+
+;
+
+[0;32mI (51571) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (51601) SDcard: File written successfully.[0m
+[0;32mI (56501) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (56601) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (56661) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (56661) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (56661) SDcard: ,0.00,0.00,0.00,0,0,0,438[0m
+
+;
+
+[0;32mI (56661) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (56691) SDcard: File written successfully.[0m
+[0;32mI (56801) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 182 70 0 0 0 125][0m
+[0;32mI (56801) mhz14a_task: CO2 concentration: 438 ppm[0m
+[0;32mI (61691) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (61741) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (61751) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (61751) SDcard: ,0.00,0.00,0.00,0,0,0,438[0m
+
+;
+
+[0;32mI (61751) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (61781) SDcard: File written successfully.[0m
+[0;32mI (61801) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (62101) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 182 70 0 0 0 125][0m
+[0;32mI (62101) mhz14a_task: CO2 concentration: 438 ppm[0m
+[0;32mI (66781) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (66831) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (66841) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (66841) SDcard: ,0.00,0.00,0.00,0,0,0,438[0m
+
+;
+
+[0;32mI (66841) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (66871) SDcard: File written successfully.[0m
+[0;32mI (67101) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (67401) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 183 70 0 0 0 124][0m
+[0;32mI (67401) mhz14a_task: CO2 concentration: 439 ppm[0m
+[0;32mI (71871) sdcard_writeDataToFile: Opening file /sdcard/test5.txt...[0m
+[0;32mI (71931) SDcard: Success to create string data(29) for writing.[0m
+[0;32mI (71931) SDcard: Writing data to file /sdcard/test5.txt...[0m
+[0;32mI (71931) SDcard: ,0.00,0.00,0.00,0,0,0,439[0m
+
+;
+
+[0;32mI (71931) sdcard_writeDataToFile: Success to write data to file /sdcard/test5.txt.[0m
+[0;32mI (71961) SDcard: File written successfully.[0m
+[0;32mI (72401) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (72701) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 1 183 70 0 0 0 124][0m
+[0;32mI (72701) mhz14a_task: CO2 concentration: 439 ppm[0m
