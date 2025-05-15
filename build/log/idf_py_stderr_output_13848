@@ -1,0 +1,10 @@
+Command: ninja flash
+warning: default on the choice symbol MHZ14A_PWM (defined at G:/Da1_2024.2/Component/MH_Z14A/Kconfig.projbuild:27) will have no effect, as defaults do not affect choice symbols
+warning: default on the choice symbol MHZ14A_UART (defined at G:/Da1_2024.2/Component/MH_Z14A/Kconfig.projbuild:30) will have no effect, as defaults do not affect choice symbols
+CMake Error at run_serial_tool.cmake:67 (message):
+  
+  G:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-master/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed.
+
+
+
