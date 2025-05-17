@@ -41,10 +41,11 @@ extern void ds3231_test(void *pvParameters);
 void save_data_to_sdcard(void *pvParameters){
     char namefile[64];
     // Lấy thời gian hiện tại cho tên file
-    ds3231_convertTimeToString(&ds3231, namefile, sizeof(namefile), 2);
+    
     while(1){
         // Ghi dữ liệu vào file
         char sensor_data[128];
+        ds3231_convertTimeToString(&ds3231, namefile, sizeof(namefile), 2);
         sprintf(sensor_data, "%s,%.2f,%.2f,%.2f,%lu,%lu,%lu,%lu\n",time_str,temperature,humidity,pressure / 100.0,Pm1_0, Pm2_5, Pm10,co2);
         write_file(namefile, sensor_data);
         vTaskDelay(pdMS_TO_TICKS(5000)); // Đọc mỗi 5 giây
