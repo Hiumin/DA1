@@ -1,3 +1,0 @@
-Command: ninja flash
-warning: default on the choice symbol MHZ14A_PWM (defined at G:/Da1_2024.2/Component/MH_Z14A/Kconfig.projbuild:27) will have no effect, as defaults do not affect choice symbols
-warning: default on the choice symbol MHZ14A_UART (defined at G:/Da1_2024.2/Component/MH_Z14A/Kconfig.projbuild:30) will have no effect, as defaults do not affect choice symbols

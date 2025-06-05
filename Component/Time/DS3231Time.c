@@ -2,7 +2,7 @@
 
 // %d:%d:%d,%d-%d-%d
 
-__attribute__((unused)) static const char *timeFormat = "%d-%d-%d %d:%d:%d";
+__attribute__((unused)) static const char *timeFormat = "%d-%d-%dT%d:%d:%d";
 
 // %d %d %d
 __attribute__((unused)) static const char *timeFormat2 = "%d%d%d";

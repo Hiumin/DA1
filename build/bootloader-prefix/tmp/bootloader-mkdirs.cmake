@@ -3,25 +3,20 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
-# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
-# would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-master/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-master/components/bootloader/subproject")
-endif()
 file(MAKE_DIRECTORY
-  "G:/Da1_2024.2/build/bootloader"
-  "G:/Da1_2024.2/build/bootloader-prefix"
-  "G:/Da1_2024.2/build/bootloader-prefix/tmp"
-  "G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp"
-  "G:/Da1_2024.2/build/bootloader-prefix/src"
-  "G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/DuyTran/esp-idf/v5.1.2/esp-idf/components/bootloader/subproject"
+  "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader"
+  "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix"
+  "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/tmp"
+  "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src"
+  "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
