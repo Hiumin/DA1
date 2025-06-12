@@ -1,0 +1,2 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p C0M8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'C0M8'
+could not open port 'C0M8': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)

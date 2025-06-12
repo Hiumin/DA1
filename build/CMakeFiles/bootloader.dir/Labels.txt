@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/Users/DuyTran/Documents/GitHub/DA1/build/CMakeFiles/bootloader
-C:/Users/DuyTran/Documents/GitHub/DA1/build/CMakeFiles/bootloader.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/CMakeFiles/bootloader-complete.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/Users/DuyTran/Documents/GitHub/DA1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+G:/Da1_2024.2/build/CMakeFiles/bootloader
+G:/Da1_2024.2/build/CMakeFiles/bootloader.rule
+G:/Da1_2024.2/build/CMakeFiles/bootloader-complete.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+G:/Da1_2024.2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,172 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+12:21:46
+
+rst:0x1 (PO�͡�Size : 2MB
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  5 2025 16:07:27[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=11070h ( 69744) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00021098 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (112) esp_image: segment 2: paddr=000210bc vaddr=3ffb0000 size=02650h (  9808) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=00023714 vaddr=40080000 size=0c904h ( 51460) load[0m
+[0;32mI (144) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=2bae4h (178916) map[0m
+[0;32mI (205) esp_image: segment 5: paddr=0005bb0c vaddr=4008c904 size=03c14h ( 15380) load[0m
+[0;32mI (219) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (219) boot: Disabling RNG early entropy source...[0m
+[0;32mI (230) cpu_start: Multicore app[0m
+[0;32mI (238) cpu_start: Pro cpu start user code[0m
+[0;32mI (238) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) app_init: Application information:[0m
+[0;32mI (238) app_init: Project name:     test[0m
+[0;32mI (242) app_init: App version:      2775556-dirty[0m
+[0;32mI (246) app_init: Compile time:     Jun 11 2025 17:35:46[0m
+[0;32mI (251) app_init: ELF file SHA256:  a41453453...[0m
+[0;32mI (256) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (266) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (270) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB3160 len 0002CEA0 (179 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (295) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (301) heap_init: At 40090518 len 0000FAE8 (62 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (325) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) sdcard_initialize: Initializing SD card[0m
+[0;32mI (345) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (345) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (345) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (405) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (465) sdcard_initialize: SDCard has been initialized.[0m
+[0;32mI (465) sdcard_initialize: Filesystem mounted[0m
+[0;32mI (465) sdcard_initialize: SDCard properties.[0m
+Name: CBADS
+Type: SDHC
+Speed: 400.00 kHz (limit: 400.00 kHz)
+Size: 3821MB
+CSD: ver=2, sector_size=512, capacity=7825408 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (485) SDcard: SD card initialized successfully.[0m
+[0;32mI (485) ds3231_initialize: DS3231 module initialize success.[0m
+Khởi tạo DS3231 thành công!
+[0;32mI (495) pms7003_initUart: PMS7003 UART port initialize successful.[0m
+[0;32mI (495) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (495) pms7003_activeMode: Set active mode successfuly.[0m
+[0;32mI (495) bme280_task: Initialize BME280 sensor(I2C/Wire1).[0m
+[0;32mI (495) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;32mI (505) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (505) ds3231_convertTimeToString: Current date & time: 11-6-2025T17:45:0[0m
+[0;32mI (525) ds3231_convertTimeToString: Current date & time: 1162025[0m
+[0;32mI (535) ds3231_test: ⏰ Thời gian hiện tại: 11-6-2025T17:45:0[0m
+[0;32mI (535) sdcard_writeDataToFile: Opening file /sdcard/1162025.txt...[0m
+[0;32mI (505) main_task: Returned from app_main()[0m
+[0;32mI (575) SDcard: Success to create string data(43) for writing.[0m
+[0;32mI (575) SDcard: Writing data to file /sdcard/1162025.txt...[0m
+[0;32mI (575) SDcard: 11-6-2025T17:45:0,0.00,0.00,0.00,0,0,0,0[0m
+;
+
+[0;32mI (585) sdcard_writeDataToFile: Success to write data to file /sdcard/1162025.txt.[0m
+[0;32mI (615) SDcard: File written successfully.[0m
+[1;31mE (1515) i2cdev: Could not read from device [0x76 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[0;32mI (1515) mhz14a_warmUp: MHZ14A warming up...[0m
+[1;31mE (1515) bmp280: Sensor not found[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d9718
+file: "./Component/BME280/bme280.c" line 14
+func: bme280_init
+expression: bmp280_init(bme280_device, bme280_params)
+[0;32mI (1655) pms7003_readData: Bytes received: 32[0m
+[0;32mI (1655) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 0A 00 15 00 18 00 0A 00 15 00 18 03 72 02 D4 00 89 00 00 00 00 00 00 12 00 02 FF 
+[0;32mI (1655) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (1665) pms7003_readData: PM1.0: 10ug/m3  PM2.5: 21ug/m3  PM10: 24ug/m3.[0m
+[0;32mI (1665) PMS7003: PM1.0: 10 µg/m³, PM2.5: 21 µg/m³, PM10: 24 µg/m³[0m
+[0;32mI (2515) mhz14a_warmUp: MHZ14A warming up...[0m
+[0;33mW (2535) bme280_init: ESP_ERR_TIMEOUT: No ack, sensor not connected...skip...[0m
+[1;31mE (2535) bme280_init: I2C port(Wire1) for BME280 sensor initialize failed.[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x2000 (ESP_ERR_IMAGE_BASE) at 0x400d9652
+file: "./main/bme280_test.c" line 17
+func: bme280_task
+expression: bme280_init(&bme280_device, &bme280_params, BME280_ADDRESS, CONFIG_BME_I2C_PORT, CONFIG_BME_PIN_NUM_SDA, CONFIG_BME_PIN_NUM_SCL)
+[0;32mI (3515) mhz14a_initUART: MHZ14A initialize success.[0m
+[0;32mI (3515) mhz14a_initUART: MHZ14A UART port initialize successful.[0m
+[0;32mI (3515) mhz14a_setRangeSetting: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (3515) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[1;31mE (3555) i2cdev: Could not read from device [0x76 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[1;31mE (3555) bmp280: Failed to read data[0m
+[1;31mE (3555) bme280_readSensorData: BME280 sensor read data failed.[0m
+[1;31mE (3835) mhz14a_getDataFromSensorViaUART: Get raw data from TX buffer failed. 18[0m
+[1;31mE (3835) mhz14a_task: Failed to get data from MH-Z14A sensor.[0m
+[0;32mI (5545) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5545) ds3231_convertTimeToString: Current date & time: 11-6-2025T17:45:5[0m
+[0;32mI (5545) ds3231_test: ⏰ Thời gian hiện tại: 11-6-2025T17:45:5[0m
+[0;32mI (5615) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5615) ds3231_convertTimeToString: Current date & time: 1162025[0m
+[0;32mI (5615) sdcard_writeDataToFile: Opening file /sdcard/1162025.txt...[0m
+[0;32mI (5635) SDcard: Success to create string data(51) for writing.[0m
+[0;32mI (5635) SDcard: Writing data to file /sdcard/1162025.txt...[0m
+[0;32mI (5635) SDcard: 11-6-2025T17:45:5,-273.00,-1.00,-0.01,10,21,24,0[0m
+;
+
+[0;32mI (5645) sdcard_writeDataToFile: Success to write data to file /sdcard/1162025.txt.[0m
+[0;32mI (5675) SDcard: File written successfully.[0m
+[0;32mI (6675) pms7003_readData: Bytes received: 128[0m
+[0;32mI (6675) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 0A 00 15 00 17 00 0A 00 15 00 17 03 6F 02 D0 00 87 00 00 00 00 00 00 12 00 02 F4 42 4D 00 1C 00 0A 00 15 00 17 00 0A 00 15 00 17 03 6E 02 CE 00 87 00 00 00 00 00 00 12 00 02 F1 42 4D 00 1C 00 0A 00 15 00 17 00 0A 00 15 00 17 03 6B 02 CB 00 87 00 00 00 00 00 00 12 00 02 EB 42 4D 00 1C 00 0A 00 15 00 16 00 0A 00 15 00 16 03 66 02 C6 00 85 00 00 00 00 00 00 12 00 02 DD 
+[0;32mI (6705) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (6705) pms7003_readData: PM1.0: 10ug/m3  PM2.5: 21ug/m3  PM10: 23ug/m3.[0m
+[0;32mI (6715) PMS7003: PM1.0: 10 µg/m³, PM2.5: 21 µg/m³, PM10: 23 µg/m³[0m
+[0;32mI (8835) mhz14a_sendCommand: Sending command to MHZ14a sensor successful.[0m
+[0;32mI (9135) mhz14a_getDataFromSensorViaUART: Raw data from TX buffer: [255 134 16 228 71 0 0 0 63][0m
+[0;32mI (9135) mhz14a_task: CO2 concentration: 4324 ppm[0m
+[1;31mE (9555) i2cdev: Could not read from device [0x76 at 1]: 263 (ESP_ERR_TIMEOUT)[0m
+[1;31mE (9555) bmp280: Failed to read data[0m
+[1;31mE (9555) bme280_readSensorData: BME280 sensor read data failed.[0m
+[0;32mI (10545) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10545) ds3231_convertTimeToString: Current date & time: 11-6-2025T17:45:10[0m
+[0;32mI (10545) ds3231_test: ⏰ Thời gian hiện tại: 11-6-2025T17:45:10[0m
+[0;32mI (10675) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10675) ds3231_convertTimeToString: Current date & time: 1162025[0m
+[0;32mI (10675) sdcard_writeDataToFile: Opening file /sdcard/1162025.txt...[0m
+[0;32mI (10695) SDcard: Success to create string data(55) for writing.[0m
+[0;32mI (10695) SDcard: Writing data to file /sdcard/1162025.txt...[0m
+[0;32mI (10695) SDcard: 11-6-2025T17:45:10,-273.00,-1.00,-0.01,10,21,23,4324[0m
+;
+
+[0;32mI (10705) sdcard_writeDataToFile: Success to write data to file /sdcard/1162025.txt.[0m
+[0;32mI (10735) SDcard: File written successfully.[0m
+[0;32mI (11715) pms7003_readData: Bytes received: 128[0m
+[0;32mI (11715) pms7003_readData: Raw data: [0m
+42 4D 00 1C 00 09 00 14 00 16 00 09 00 14 00 16 03 61 02 C1 00 84 00 00 00 00 00 00 12 00 02 CE 42 4D 00 1C 00 09 00 14 00 15 00 09 00 14 00 15 03 5D 02 BD 00 84 00 00 00 00 00 00 12 00 02 C4 42 4D 00 1C 00 09 00 14 00 15 00 09 00 14 00 15 03 57 02 B8 00 83 00 00 00 00 00 00 12 00 02 B8 42 4D 00 1C 00 0A 00 15 00 16 00 0A 00 15 00 16 03 52 02 B4 00 82 00 00 00 00 00 00 12 00 02 B4 
+[0;32mI (11745) pms7003_readData: PMS7003 sensor read data successful.[0m
+[0;32mI (11745) pms7003_readData: PM1.0: 9ug/m3  PM2.5: 20ug/m3  PM10: 22ug/m3.[0m
+[0;32mI (11755) PMS7003: PM1.0: 9 µg/m³, PM2.5: 20 µg/m³, PM10: 22 µg/m³[0m
