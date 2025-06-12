@@ -1,6 +1,6 @@
 /*
  * Automatically generated file. DO NOT EDIT.
- * Espressif IoT Development Framework (ESP-IDF) 5.1.2 Configuration Header
+ * Espressif IoT Development Framework (ESP-IDF) 5.5.0 Configuration Header
  */
 #pragma once
 #define CONFIG_SOC_BROWNOUT_RESET_SUPPORTED "Not determined"
