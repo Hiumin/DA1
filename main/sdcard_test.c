@@ -30,7 +30,7 @@ sdmmc_host_t host = SDSPI_HOST_DEFAULT();
 sdspi_device_config_t slot_config = SDSPI_DEVICE_CONFIG_DEFAULT();
 sdmmc_card_t sdcard;
 
-void init_sdcard(void)
+esp_err_t init_sdcard(void)
 {
     slot_config.gpio_cs = PIN_NUM_CS;
     slot_config.host_id = host.slot;
@@ -40,69 +40,79 @@ void init_sdcard(void)
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "SD card initialized successfully.");
+        return ESP_OK;
     }
     else
     {
-        ESP_LOGE("SDcard", "Failed to initialize SD card.");
+        ESP_LOGE("SDcard", "Failed to initialize SD card: 0x%x", ret);
+        return ret;
     }
 }
 
-void write_file(const char *nameFile, char *context)
+esp_err_t write_file(const char *nameFile, char *context)
 {
     // Ghi dữ liệu vào file test.txt
     esp_err_t ret = sdcard_writeDataToFile(nameFile, "%s\n", context);    
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "File written successfully.");
+        return ESP_OK;
     }
     else
     {
-        ESP_LOGE("SDcard", "Failed to write file.");
+        ESP_LOGE("SDcard", "Failed to write file: 0x%x", ret);
+        return ret;
     }
 }
 
-void read_file(const char *nameFile)
+esp_err_t read_file(const char *nameFile)
 {
     char data[128];
     esp_err_t ret = sdcard_readDataFromFile(nameFile, "%s", data);
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "File content: %s", data);
+        return ESP_OK;
     }
     else if (ret == ESP_ERR_NOT_FOUND)
     {
         ESP_LOGE("SDcard", "File not found.");
+        return ret;
     }
     else
     {
-        ESP_LOGE("SDcard", "Failed to read file.");
+        ESP_LOGE("SDcard", "Failed to read file: 0x%x", ret);
+        return ret;
     }
 }
 
-void delete_file(const char *nameFile)
+esp_err_t delete_file(const char *nameFile)
 {
     esp_err_t ret = sdcard_removeFile(nameFile);
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "File deleted successfully.");
+        return ESP_OK;
     }
     else
     {
-        ESP_LOGE("SDcard", "Failed to delete file.");
+        ESP_LOGE("SDcard", "Failed to delete file: 0x%x", ret);
+        return ret;
     }
 }
 
-void rename_file(const char *oldNameFile, char *newNameFile)
+esp_err_t rename_file(const char *oldNameFile, char *newNameFile)
 {
     esp_err_t ret = sdcard_renameFile(oldNameFile, newNameFile);
-    
     if (ret == ESP_OK)
     {
         ESP_LOGI("SDcard", "File renamed successfully.");
+        return ESP_OK;
     }
     else
     {
-        ESP_LOGE("SDcard", "Failed to rename file.");
+        ESP_LOGE("SDcard", "Failed to rename file: 0x%x", ret);
+        return ret;
     }
 }
 

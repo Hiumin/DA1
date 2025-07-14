@@ -12,29 +12,29 @@
 #include "DS3231Time.h"
 
 //SDCARD
-extern void init_sdcard(void);
-extern void write_file(const char *nameFile, char *context);
-extern void read_file(const char *nameFile);
-extern void delete_file(const char *nameFile);
-extern void rename_file(const char *oldNameFile, char *newNameFile);
+extern esp_err_t init_sdcard(void);
+extern esp_err_t write_file(const char *nameFile, char *context);
+extern esp_err_t read_file(const char *nameFile);
+extern esp_err_t delete_file(const char *nameFile);
+extern esp_err_t rename_file(const char *oldNameFile, char *newNameFile);
 
 
 //PM7003
 extern uint32_t Pm1_0, Pm2_5, Pm10;
-extern void pms7003_task(void *pvParameters);
+extern esp_err_t pms7003_task(void *pvParameters);
 
 //MH-Z14A
 extern uint32_t co2;
-extern void mhz14a_task(void *pvParameters);
+extern esp_err_t mhz14a_task(void *pvParameters);
 
 //BME280
 extern float temperature, pressure, humidity;
-extern void bme280_task(void *pvParameters);
+extern esp_err_t bme280_task(void *pvParameters);
 
 //DS3231
 extern i2c_dev_t ds3231;
 extern char time_str[64];
-extern void ds3231_test(void *pvParameters);
+extern esp_err_t ds3231_test(void *pvParameters);
 
 
 
@@ -45,7 +45,7 @@ void save_data_to_sdcard(void *pvParameters){
     while(1){
         // Ghi dữ liệu vào file
         char sensor_data[128];
-        ds3231_convertTimeToString(&ds3231, namefile, sizeof(namefile), 2);
+        ds3231_convertTimeToString(&ds3231, namefile, sizeof(namefile), 5);
         sprintf(sensor_data, "%s,%.2f,%.2f,%.2f,%lu,%lu,%lu,%lu",time_str,temperature,humidity,pressure / 100.0,Pm1_0, Pm2_5, Pm10,co2);
         write_file(namefile, sensor_data);
         vTaskDelay(pdMS_TO_TICKS(5000)); // Đọc mỗi 5 giây

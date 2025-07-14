@@ -11,6 +11,8 @@ __attribute__((unused)) static const char *timeFormat3 = "%d-%d-%d %02d:%02d";
 // %d-%d-%d
 __attribute__((unused)) static const char *timeFormat4 = "%d-%d-%d";
 
+__attribute__((unused)) static const char *timeFormat5 = "%02d%02d%02d";
+
 static const int month[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 int currentDay;
@@ -54,6 +56,9 @@ esp_err_t ds3231_convertTimeToString(i2c_dev_t *dev, char *timeString, const uns
         break;
     case 4:
         lenght = sprintf(timeString, timeFormat4, time.tm_mday, time.tm_mon, time.tm_year);
+        break;
+    case 5:
+        lenght = sprintf(timeString, timeFormat5, time.tm_year % 100, time.tm_mon, time.tm_mday);
         break;
     default:
         break;

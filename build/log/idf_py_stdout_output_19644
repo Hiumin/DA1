@@ -1,0 +1,94 @@
+Command: G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-master\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 G:\Da1_2024.2\build\test.elf G:\Da1_2024.2\build\bootloader\bootloader.elf --force-color -m 'G:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-master\tools\idf.py' '-p' 'COM8'
+0, SPIWP:0x (49) boot: Partition Table:
+[0;32mI (52) boot: ## Label            Usage          Type �ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1655-gc5865270b5-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  5 2025 16:07:27[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fec8h ( 65224) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001fef0 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001ff14 vaddr=3ffb0000 size=00104h (   260) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=28ba0h (166816) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=00048bc8 vaddr=3ffb0104 size=0253ch (  9532) load[0m
+[0;32mI (183) esp_image: segment 5: paddr=0004b10c vaddr=40080000 size=10154h ( 65876) load[0m
+[0;32mI (217) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (227) cpu_start: Multicore app[0m
+[0;32mI (235) cpu_start: Pro cpu start user code[0m
+[0;32mI (235) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (235) app_init: Application information:[0m
+[0;32mI (236) app_init: Project name:     test[0m
+[0;32mI (239) app_init: App version:      b3a4db7-dirty[0m
+[0;32mI (244) app_init: Compile time:     Jun 17 2025 00:17:36[0m
+[0;32mI (249) app_init: ELF file SHA256:  bc8bae10d...[0m
+[0;32mI (253) app_init: ESP-IDF:          v5.5-dev-1655-gc5865270b5-dirty[0m
+[0;32mI (259) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (263) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (267) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (271) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 3FFB3138 len 0002CEC8 (179 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 40090154 len 0000FEAC (63 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (307) spi_flash: flash io: dio[0m
+[0;33mW (310) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (322) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) sdcard_initialize: Initializing SD card[0m
+[0;32mI (343) sdcard_initialize: Using SPI peripheral[0m
+[0;32mI (343) sdcard_initialize: Mounting filesystem[0m
+[0;32mI (343) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (353) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (403) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (463) sdcard_initialize: SDCard has been initialized.[0m
+[0;32mI (463) sdcard_initialize: Filesystem mounted[0m
+[0;32mI (463) sdcard_initialize: SDCard properties.[0m
+Name: CBADS
+Type: SDHC
+Speed: 400.00 kHz (limit: 400.00 kHz)
+Size: 3821MB
+CSD: ver=2, sector_size=512, capacity=7825408 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (483) SDcard: SD card initialized successfully.[0m
+[0;32mI (483) ds3231_initialize: DS3231 module initialize success.[0m
+[0;32mI (493) bme280_task: Initialize BME280 sensor(I2C/Wire1).[0m
+Khởi tạo DS3231 thành công!
+[0;32mI (493) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (503) ds3231_convertTimeToString: Current date & time: 17/6/2025T0:18:21Z[0m
+[0;32mI (503) bme280_init: BME280 sensor initialze successful.[0m
+[0;32mI (513) ds3231_test: ⏰ Thời gian hiện tại: 17/6/2025T0:18:21Z[0m
+[0;32mI (513) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (523) BME280: Nhiet do: 22.03 °C, Ap suat: 686.36 hPa, Do am: 78.56%[0m
+[0;32mI (503) main_task: Returned from app_main()[0m
+[0;32mI (5523) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (5523) ds3231_convertTimeToString: Current date & time: 17/6/2025T0:18:26Z[0m
+[0;32mI (5523) ds3231_test: ⏰ Thời gian hiện tại: 17/6/2025T0:18:26Z[0m
+[0;32mI (5533) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (5533) BME280: Nhiet do: 30.32 °C, Ap suat: 1004.97 hPa, Do am: 72.29%[0m
+[0;32mI (10523) ds3231_convertTimeToString: Convert time to string successfully.[0m
+[0;32mI (10523) ds3231_convertTimeToString: Current date & time: 17/6/2025T0:18:31Z[0m
+[0;32mI (10523) ds3231_test: ⏰ Thời gian hiện tại: 17/6/2025T0:18:31Z[0m
+[0;32mI (10543) bme280_readSensorData: BME280 sensor read data successful.[0m
+[0;32mI (10543) BME280: Nhiet do: 30.33 °C, Ap suat: 1004.95 hPa, Do am: 72.26%[0m

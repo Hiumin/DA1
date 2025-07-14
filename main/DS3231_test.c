@@ -18,24 +18,24 @@ static const char *TAG = "ds3231_test";
 
 char time_str[64];
 
-void ds3231_test(void *pvParameters) {
+esp_err_t ds3231_test(void *pvParameters) {
     esp_err_t ret = ds3231_initialize(&ds3231, I2C_PORT, SDA_GPIO, SCL_GPIO);
     if (ret != ESP_OK) {
-        ESP_LOGE(TAG, "Khởi tạo DS3231 thất bại!\n");
+        ESP_LOGE(TAG, "Failed to initialize DS3231: 0x%x", ret);
         vTaskDelete(NULL);
-        return;
+        return ret;
     }
-    printf("Khởi tạo DS3231 thành công!\n");
+    printf("Initialize DS3231 successful!\n");
 
     while (1) {
-        // Lấy và hiển thị thời gian hiện tại
-        ds3231_convertTimeToString(&ds3231, time_str, sizeof(time_str), 1);  // format: dd-mm-yyyy hh:mm:ss
+        ret = ds3231_convertTimeToString(&ds3231, time_str, sizeof(time_str), 1);  // format: dd-mm-yyyy hh:mm:ss
+        if (ret != ESP_OK) {
+            ESP_LOGE(TAG, "Failed to convert time to string: 0x%x", ret);
+            vTaskDelete(NULL);
+            return ret;
+        }
         ESP_LOGI(TAG, "⏰ Thời gian hiện tại: %s", time_str);
-
-
         vTaskDelay(pdMS_TO_TICKS(5000));  // delay 5 giây
     }
-
-    // Không bao giờ đến đây, nhưng phòng ngừa
-    vTaskDelete(NULL);
+    return ESP_OK;
 }
